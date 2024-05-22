@@ -8,7 +8,6 @@ module.exports = {
       },
       colors: {
         'pink': 'rgba(187, 38, 73, 0.5)',
-        'pnk': 'rgba(212, 46, 91, 1)'
       },
     },
   },
