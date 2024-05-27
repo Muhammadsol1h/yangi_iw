@@ -9,7 +9,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            display: flex;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style> -->
 </head>
 
 <body>
@@ -35,37 +68,43 @@
         </div>
     </header>
     <section class="">
-        <div
-            class="md:pt-7 md:pb-7 md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1280px] md:flex md:items-center md:gap-6 md:bg-[#BB2649]">
-            <a href="#" class="md:flex md:items-center md:gap-6">
-                <img src="./image/hero/house.svg" alt="" class="md:flex md:items-center md:object-cover">
-                <div class="md:h-11 md:bg-white md:w-[2px]"></div>
-            </a>
-            <ul class="md:flex md:gap-6">
-                <li class="md:flex md:items-center"><a href=""
-                        class=" md:flex md:items-center md:gap-4 md:font-normal md:text-lg md:text-white">ПРОДУКЦИЯ
-                        <img src="./image/hero/chevron-down.svg" class="md:flex md:items-center " alt=""> </a></li>
-                <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">УСЛУГИ</a></li>
-                <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">ПРЕИМУЩЕСТВА</a></li>
-                <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">АКЦИИ</a></li>
-                <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">ОТЗЫВЫ</a></li>
-                <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">СЕРТИФИКАТЫ</a></li>
-                <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">НОВОСТИ И СТАТЬИ</a></li>
-                <li class=""><a href=""
-                        class="md:font-normal md:text-lg md:text-white md:flex  md:items-center md:gap-4">КОНТАКТЫ
-                        <img src="./image/hero/chevron-down.svg" alt=""> </a></li>
-            </ul>
-            <a href="#" class="md:flex md:items-center md:gap-6 ">
-                <div class="md:h-11 md:bg-white md:w-[2px]"></div>
-                <img src="./image/hero/search.svg" class="md:flex md:items-center md:object-cover" alt="">
-            </a>
+        <div class="md:bg-[#BB2649]">
+            <div
+                class="md:pt-7 md:pb-7 md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1280px] md:flex md:items-center md:gap-6">
+                <a href="#" class="md:flex md:items-center md:gap-6">
+                    <img src="./image/hero/house.svg" alt="" class="md:flex md:items-center md:object-cover">
+                    <div class="md:h-11 md:bg-white md:w-[2px]"></div>
+                </a>
+                <ul class="md:flex md:gap-6">
+                    <li class="md:flex md:items-center"><a href=""
+                            class=" md:flex md:items-center md:gap-4 md:font-normal md:text-lg md:text-white">ПРОДУКЦИЯ
+                            <img src="./image/hero/chevron-down.svg" class="md:flex md:items-center " alt=""> </a></li>
+                    <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">УСЛУГИ</a></li>
+                    <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">ПРЕИМУЩЕСТВА</a></li>
+                    <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">АКЦИИ</a></li>
+                    <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">ОТЗЫВЫ</a></li>
+                    <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">СЕРТИФИКАТЫ</a></li>
+                    <li class=""><a href="" class="md:font-normal md:text-lg md:text-white">НОВОСТИ И СТАТЬИ</a></li>
+                    <li class=""><a href=""
+                            class="md:font-normal md:text-lg md:text-white md:flex  md:items-center md:gap-4">КОНТАКТЫ
+                            <img src="./image/hero/chevron-down.svg" alt=""> </a></li>
+                </ul>
+                <a href="#" class="md:flex md:items-center md:gap-6 ">
+                    <div class="md:h-11 md:bg-white md:w-[2px]"></div>
+                    <img src="./image/hero/search.svg" class="md:flex md:items-center md:object-cover" alt="">
+                </a>
+            </div>
         </div>
-        <div class="md:bg-banner md:ml-auto md:mr-auto md:pl-5 md:pl-5 md:max-w-[1280px]">
-            <div class="md:pt-[185px] ">
-                <h1 class="md:font-bold md:text-6xl md:text-white md:mb-[243px]">Экстерьерные пленки DECORS</h1>
-                <button class="md:flex md:items-center md:border-none md:pb-10 md:rounded-none">
-                    <img src="./image/hero/arrow.svg" class="md:flex md:object-cover" alt="">
-                </button>
+        <div
+            style="background-image: url(./image/hero/hero.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            <div class=" md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1280px]">
+                <div class="">
+                    <h1 class="md:font-bold md:pt-[185px] md:text-6xl md:text-white md:mb-[243px]">Экстерьерные пленки
+                        DECORS</h1>
+                    <button class="md:flex md:items-center md:border-none md:pb-10 md:rounded-none">
+                        <img src="./image/hero/arrow.svg" class="md:flex md:object-cover" alt="">
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -101,32 +140,50 @@
             </div>
         </div>
     </section>
-    <section class="md:bg-bannertwo md:bg-no-repeat md:ml-auto md:mr-auto">
+    <section
+        style="background-image: url(./image/decont/banner2.png); background-repeat: no-repeat; background-position: center; background-size: cover; object-fit: cover;"
+        class=" md:bg-no-repeat md:ml-auto md:mr-auto">
         <div class="md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1280px] md:pt-10 md:pb-[93px]">
             <h2 class="md:font-bold md:text-[40px] md:text-white md:text-center md:mb-[47px]">Преимущества DECORS</h2>
             <div class="md:flex md:gap-4">
-                <div class="md:bg-onecart">
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
+                " class="md:pt-6">
                     <img src="./image/decont/check.svg" class="md:flex md:object-cover md:mb-4 md:ml-auto md:mr-auto"
                         alt="">
                     <p
                         class="md:font-normal md:text-2xl md:text-center md:text-white md:pl-[46px] md:pr-[46px] md:mb-[25px]">
                         Сертификат RAL</p>
                 </div>
-                <div class="md:bg-onecart">
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
+                " class="md:pt-6">
                     <img src="./image/decont/check.svg" class="md:flex md:object-cover md:mb-4 md:ml-auto md:mr-auto"
                         alt="">
                     <p
                         class="md:font-normal md:text-2xl md:text-center md:text-white md:pl-[31px] md:pr-[31px] md:mb-[25px]">
                         Защита от нагрева</p>
                 </div>
-                <div class="md:bg-onecart">
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;
+
+                box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                
+                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
+                border-radius: 10px;
+                " class="md:pt-6">
                     <img src="./image/decont/check.svg" class="md:flex md:object-cover md:mb-4 md:ml-auto md:mr-auto"
                         alt="">
                     <p
                         class="md:font-normal md:text-2xl md:text-center md:text-white md:pl-[91px] md:pr-[91px] md:mb-[25px]">
                         Праймер</p>
                 </div>
-                <div class="md:bg-onecart">
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;
+    
+                box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                  
+                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
+                border-radius: 10px;
+                " class="md:pt-10">
                     <img src="./image/decont/check.svg" class="md:flex md:object-cover md:mb-4 md:ml-auto md:mr-auto"
                         alt="">
                     <p
@@ -136,10 +193,10 @@
             </div>
         </div>
     </section>
-    <section class="md:pt-[60px]">
+    <section class="md:pt-[60px] md:mb-[70px]">
         <div class="md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1240px]">
             <h2 class="md:text-black md:font-bold md:text-[40px] md:text-center md:mb-10">Услуги</h2>
-            <div class="md:flex md:gap-5">
+            <div class="md:flex md:gap-5 md:justify-center md:mb-10">
                 <div
                     class="md:border md:border-dashed md:border-[#BB2649] md:rounded-[10px] md:pl-[40px] md:pr-[40px] md:pt-[60px] md:pb-[52px]">
                     <h3 class="md:font-bold md:text-3xl md:text-black md:text-center mb-[48px]">ДЛЯ ПРОФЕССИОНАЛОВ</h3>
@@ -175,7 +232,8 @@
                             class="md:flex md:justify-center md:items-center md:bg-[#9F2436] md:border md:rounded-full md:w-[70px] md:h-[70px]">
                             <img src="./image/decont/bag.svg" class="md:flex md:object-cover" alt="">
                         </div>
-                        <p class="md:font-normal md:text-[26px] md:text-black">Помощь в расчете стартапа и<br> подборе оборудования</p>
+                        <p class="md:font-normal md:text-[26px] md:text-black">Помощь в расчете стартапа и<br> подборе
+                            оборудования</p>
                     </div>
                     <div class="md:flex md:gap-7 md:mb-6 md:items-center">
                         <div
@@ -193,9 +251,238 @@
                     </div>
                 </div>
             </div>
+            <button
+                class="md:text-white md:text-xl md:font-bold md:ml-[500px] md:mr-auto md:justify-center md:items-center md:text-center md:bg-[#D42E5B] md:rounded-[10px] md:pt-[18px] md:pl-[35px] md:pr-[35px] md:pb-[18px]">Сделать
+                заказ</button>
         </div>
         </div>
     </section>
+    <section class="md:pt-[14px] md:mb-[60px]">
+        <div class="md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1280px]">
+            <h2 class="md:font-bold md:text-[40px] md:text-black md:text-center md:mb-[57px]">Как работает заказ</h2>
+            <div class="md:flex md:gap-5 md:mb-[44px]">
+                <div class="md:w-[232px]">
+                    <p class="md:font-bold md:text-[72px] md:text-[#9F2436] md:mb-5 ">1</p>
+                    <h2 class="md:font-bold md:text-[40px] md:text-black md:mb-[15px]">
+                        Заказ
+                    </h2>
+                    <p class="md:font-normal md:text-[26px] md:text-black">Подготовьте и <br> отправьте заявку</p>
+                </div>
+                <div class="md:w-[232px]">
+                    <p class="md:font-bold md:text-[72px] md:text-[#9F2436] md:mb-5 ">2</p>
+                    <h2 class="md:font-bold md:text-[40px] md:text-black md:mb-[15px]">
+                        Счет
+                    </h2>
+                    <p class="md:font-normal md:text-[26px] md:text-black">Получите
+                        и <br> проверьте счет</p>
+                </div>
+                <div class="md:w-[232px]">
+                    <p class="md:font-bold md:text-[72px] md:text-[#9F2436] md:mb-5 ">3</p>
+                    <h2 class="md:font-bold md:text-[40px] md:text-black md:mb-[15px]">
+                        Оплата
+                    </h2>
+                    <p class="md:font-normal md:text-[26px] md:text-black">Подтвердите счет <br> и произведите<br>
+                        оплату</p>
+                </div>
+                <div class="md:w-[232px]">
+                    <p class="md:font-bold md:text-[72px] md:text-[#9F2436] md:mb-5 ">4</p>
+                    <h2 class="md:font-bold md:text-[40px] md:text-black md:mb-[15px]">
+                        Выбор ТК
+                    </h2>
+                    <p class="md:font-normal md:text-[26px] md:text-black">Сообщите <br> пожелания по <br> доставке</p>
+                </div>
+                <div class="md:w-[232px]">
+                    <p class="md:font-bold md:text-[72px] md:text-[#9F2436] md:mb-5 ">5</p>
+                    <h2 class="md:font-bold md:text-[40px] md:text-black md:mb-[15px]">
+                        Доставка
+                    </h2>
+                    <p class="md:font-normal md:text-[26px] md:text-black">Получите свой <br> заказ</p>
+                </div>
+            </div>
+            <div style="background-image: url(./image/header/Group\ 294\ \(3\).png); background-position: center; background-repeat: no-repeat;  "
+                class="">
+                <h2 class="md:font-bold md:text-[28px] md:text-white md:text-center md:pt-[50px] md:mb-[50px]">Сделайте
+                    первый шаг</h2>
+                <button
+                    class=" md:bg-white md:border md:rounded-[10px] md:pt-[18px] md:pb-[18px] md:pl-[35px] md:pr-[35px] md:font-bold md:text-[20px] md:text-[#D42E5B] md:ml-[460px] md:mb-[60px]">Бесплатная
+                    консультация</button>
+            </div>
+        </div>
+    </section>
+    <section class="md:mb-[50px]">
+        <div class="md:ml-auto md:mr-auto md:pr-5 md:pl-5 md:max-w-[1300px]">
+            <h2 class="md:font-bold md:text-[40px] md:text-black md:text-center md:mb-[47px]">Отзывы клиентов</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide md:flex md:gap-[25px] md:items-center">
+                        <div class=" md:border md:border-[#BB264933] md:border-dotted md:mt-[-350px] md:rounded-[10px]">
+                            <div class="md:pt-[60px] md:pb-[60px] md:pl-[30px]">
+                                <p
+                                    class="md:font-normal md:text-[26px] md:text-black md:w-[549px] md:text-left md:mb-6">
+                                    - Мы работаем больше 15 лет с разными пленками. Сейчас работаем с пленкой Decors.
+                                    Очень
+                                    довольны качеством товара. Спасибо производителю!
+                                </p>
+                                <h2 class="md:font-bold md:text-[26px] md:text-left">Анвар, Россия</h2>
+                            </div>
+                        </div>
+                        <div class="md:border md:border-[#BB264933] md:border-dotted md:rounded-[10px]">
+                            <div class="md:pt-[60px] md:pb-[60px] md:pl-[30px]">
+                                <p
+                                    class="md:font-normal md:text-[26px] md:text-black md:w-[549px] md:text-left md:mb-6">
+                                    - Используем пленку Decors уже почти год. По качеству ничем не хуже других пленок.
+                                    Конечно, нет такого разнообразия цветов, но в целом пленка хорошая. Клей ложится
+                                    хорошо,
+                                    тянется тоже хорошо. Толщина пленки нормальная. Применяем для всех наружных
+                                    ламинаций.
+                                    По качеству и цене самый лучший, на наш взгляд, вариант! Акриловый слой имеется. В
+                                    общем, довольны пленкой Decors. По основным цветам - махагон, золотой дуб, золотой
+                                    орех,
+                                    антрацит, темный дуб - мы полностью перешли на Decors.
+                                </p>
+                                <h2 class="md:font-bold md:text-[26px] md:text-left">Мурат, СНГ</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide md:flex md:gap-[25px] md:items-center">
+                        <div class=" md:border md:border-[#BB264933] md:mt-[-230px] md:border-dotted md:rounded-[10px]">
+                            <div class="md:pt-[60px] md:pl-[30px] md:pb-[60px]">
+                                <p
+                                    class="md:font-normal md:text-[26px] md:text-black md:w-[549px] md:text-left md:mb-6">
+                                    - Берем пленку Decors с 2018 года. За это время пленка зарекомендовала себя
+                                    наилучшим образом. Очень радует акриловый слой и конечно наличие сертификата RAL.
+                                    Доступная цена делает пленку очень конкурентоспособной. Цветовая гамма не очень
+                                    большая, но радуют цвета антрацит и темный дуб, т.к. это основные цвета. Очень не
+                                    хватает цвета «каштан» в палитре.
+                                </p>
+                                <h2 class="md:font-bold md:text-[26px] md:text-left">Виталий, Россияя</h2>
+                            </div>
+                        </div>
+                        <div class="md:border md:border-[#BB264933] md:border-dotted md:rounded-[10px]">
+                            <div class="md:pt-[60px] md:pb-[60px] md:pl-[30px]">
+                                <p
+                                    class="md:font-normal md:text-[26px] md:text-black md:w-[549px] md:text-left md:mb-6">
+                                    - Работаем с Decors не первый год, за все время работы не было ни одного
+                                    отрицательного отзыва. Благодарим компанию за быстрое реагирование на заказ,
+                                    доставку всегда в оговоренные сроки, вежливое отношение к клиентам, хорошее качество
+                                    продукции. Пленка для ламинации профиля Decors имеет яркий цвет, приятный внешний
+                                    вид, мягкую основу, обладает морозоустойчивостью и высокой теплостойкостью, не
+                                    меняет своих цветовых свойств при изменении погодных факторов. Работать с
+                                    ламинационной пленкой Decors одно удовольствие. Спасибо вам за отличную работу,
+                                    успехов и процветания вашей компании.
+                                </p>
+                                <h2 class="md:font-bold md:text-[26px] md:text-left">Андрей, СНГ</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide md:flex md:gap-[25px] md:items-center">
+                        <div class=" md:border md:border-[#BB264933] md:border-dotted md:rounded-[10px]">
+                            <div class="md:pt-[60px] md:pb-[60px] md:pl-[30px]">
+                                <p
+                                    class="md:font-normal md:text-[26px] md:text-black md:w-[549px] md:text-left md:mb-6">
+                                    - Неплохая пленка, работаем полгода, нареканий от потребителей нашей продукции нет.
+                                    Спасибо.
+                                </p>
+                                <h2 class="md:font-bold md:text-[26px] md:text-left">Валерий, Россия</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        style="background-image: url(./image/header/Group\ 225.png); background-position: center; background-size: cover; background-repeat: no-repeat;"
+        class="md:mb-[60px]">
+        <div
+            class="md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1280px] md:flex md:justify-between md:items-center md:text-center md:pt-[88px] md:pb-[88px] ">
+            <h2 class="md:font-bold md:text-white md:text-[40px]">Нужна помощь менеджера?</h2>
+            <button
+                class="md:text-[#D42E5B] md:text-xl md:font-bold md:border md:border-white md:bg-white md:rounded-[10px] md:pl-[35px] md:pr-[35px] md:pt-[18px] pb-[18px] ">Обсудить
+                заказ</button>
+        </div>
+    </section>
+    <section class="md:mb-[60px]">
+        <div class="md:ml-auto md:mr-auto md:pl-5 md:pr-5 md:max-w-[1280px]">
+            <h2 class="md:font-bold md:text-[40px] md:text-[#27272A] md:text-center md:mb-[47px]">Новости</h2>
+            <div class="md:flex md:gap-[30px]">
+                <div class="">
+                    <img src="./image/header/Rectangle 24.png" class="md:object-cover md:flex md:mb-[25px]" alt="">
+                    <p class="md:font-normal md:text-[24px] md:text-black md:w-[400px] md:mb-[25px]">Ведущие клиенты
+                        компании «ДекорС» посетили завод компании Decors L&C в Сеуле</p>
+                    <a href="#" class="md:font-bold md:text-xl md:text-black">Подробнее »</a>
+                </div>
+                <div class="">
+                    <img src="./image/header/Rectangle 24 (1).png" class="md:object-cover md:flex md:mb-[25px]" alt="">
+                    <p class="md:font-normal md:text-[24px] md:text-black md:w-[400px] md:mb-[25px]">В«ДекорС» на
+                        Eurasia Window 2019</p>
+                    <a href="#" class="md:font-bold md:text-xl md:text-black">Подробнее »</a>
+                </div>
+                <div style="box-shadow: 0px 0px 14px 0px rgba(212, 46, 91, 0.1);
+                " class="md:bg-white">
+                    <div class="md:pt-[50px] md:pb-[50px] md:pl-[18px] md:pr-[18px] md:w-[358px]">
+                        <div class="md:mb-[30px]">
+                            <p class="md:font-bold md:text-xl md:text-black mb-[30px]">Decors на MosBuild 2019</p>
+                            <div class="md:bg-[#E1E0E0] md:h-[1px] "></div>
+                        </div>
+                        <div class="md:mb-[30px]">
+                            <p class="md:font-bold md:text-xl md:text-black mb-[30px]">Decors - 24 года эксплуатации без
+                                изменений цвета</p>
+                            <div class="md:bg-[#E1E0E0] md:h-[1px] "></div>
+                        </div>
+                        <div class="md:mb-[30px]">
+                            <p class="md:font-bold md:text-xl md:text-black mb-[30px]">Decors на MosBuild 2021</p>
+                            <div class="md:bg-[#E1E0E0] md:h-[1px] "></div>
+                        </div>
+                        <div class="">
+                            <p class="md:font-bold md:text-xl md:text-black mb-[30px]">В палитре пленок Decors появились
+                                новые популярные люксовые цвета по цене</p>
+                            <div class="md:bg-[#E1E0E0] md:h-[1px] "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="md:bg-[#BB2649]">
+        <div class="md:ml-auto md:mr-auto md:pl-5 md:pt-20 md:pb-[60px] md:pr-5 md:max-w-[1280px]">
+            <div class="md:flex md:gap-[141px] md:mb-[60px]">
+                <div class="md:w-[489px]">
+                    <p class="md:flex md:items-center md:font-normal md:text-2xl md:gap-[15px] md:text-white "><img
+                            src="./image/footer/phone_in_talk_FILL0_wght400_GRAD0_opsz24.svg"
+                            class="md:flex md:object-cover md:mb-[5px]" alt="">8 (800) 55-11-607
+                    </p>
+                    <p class="md:font-normal md:text-2xl md:text-white md:pl-[50px]">WhatsApp: +79833887010</p>
+                    <p class="md:font-normal md:text-2xl md:text-white md:pl-[50px]">E-mail: info@decors-pro.ru</p>
+                    <p class="md:flex md:items-center md:font-normal md:text-2xl md:gap-[20px] md:text-white "><img
+                            src="./image/footer/Vector.svg" class="md:flex md:object-cover md:mb-[5px]" alt="">г.
+                        Солнечногорск, ул. Красная, 161
+                    </p>
+                </div>
+                <div class="md:flex md:gap-[10px]">
+                    <ul class="md:w-[300px]">
+                        <li class=""><a href="" class="md:font-normal md:text-2xl md:mb-1 md:text-white">Продукция</a>
+                        </li>
+                        <li class=""><a href="" class="md:font-normal md:text-2xl md:mb-1 md:text-white">Услуги</a></li>
+                        <li class=""><a href=""
+                                class="md:font-normal md:text-2xl md:mb-1 md:text-white">Преимущества</a></li>
+                        <li class=""><a href="" class="md:font-normal md:text-2xl md:mb-1 md:text-white">Акции</a></li>
+                    </ul>
+                    <ul class="md:w-[300px]">
+                        <li class=""><a href="" class="md:font-normal md:text-2xl md:mb-1 md:text-white">Отзывы</a></li>
+                        <li class=""><a href="" class="md:font-normal md:text-2xl md:mb-1 md:text-white">Сертификаты</a>
+                        </li>
+                        <li class=""><a href="" class="md:font-normal md:text-2xl md:mb-1 md:text-white">Новости и
+                                статьи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="md:font-normal md:text-center md:items-center md:justify-center md:flex md:text-2xl md:gap-[5px] md:text-white"><img src="./image/footer/©.svg" class="md:flex md:object-cover" alt=""> 2024 Экстерьерные пленки
+                DECORS Самоклеящиеся листы для ламинации сэндвича</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
