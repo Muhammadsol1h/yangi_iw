@@ -11,87 +11,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            display: flex;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style> -->
 </head>
 
 <body>
-    <header class="xl:pt-5 xl:pb-5">
-        <div
-            class="xl:ml-auto xl:mr-auto xl:max-w-[1280px] xl:pl-5 xl:pr- xl:flex xl:justify-between sm:pl-[15px] sm:pr-[15px] sm:ml-auto sm:mr-auto sm:max-w-[390px]">
-            <div class="xl:flex xl:items-center xl:justify-between xl:gap-14 sm:flex sm:gap-[125px] sm:items-center sm:mb-5">
-                <a href="#" class="xl:flex sm:flex">
-                    <img src="./image/header/logo.svg" alt=""
-                        class="xl:flex xl:object-cover sm:flex sm:object-cover sm:w-[200px] sm:h-[58px]">
-                </a>
-                <p class="xl:font-normal xl:text-base xl:text-left xl:text-black sm:hidden xl:block ">Экстерьерные пленки DECORS
-                </p>
-                <p class="xl:font-normal xl:text-base xl:text-left xl:text-black sm:hidden  ">Экстерьерные пленки DECORS
-                </p>
-                <button class="xl:hidden">
-                    <img src="./image/responsib/Group 248.svg" class="flex object-cover md:flex md:object-cover " alt="">
-                </button>
+    <header class="pt-5 pb-5 md:pt-5 md:pb-5">
+        <div class="ml-auto mr-auto max-w-[1280px] pl-5 pr-5  justify-between flex ">
+            <div>
+                <div class="flex items-center justify-between gap-14 md:justify-between">
+                    <a href="#" class="md:flex hidden ">
+                        <img src="./image/header/logo.svg" alt="" class="flex object-cover">
+                    </a>
+                    <a href="#" class="flex md:hidden">
+                        <img src="./image/header/Group (1).svg" alt="" class="flex object-cover ">
+                    </a>
+                    <p class="font-normal text-base text-left text-black hidden md:flex ">Экстерьерные пленки DECORS
+                    </p>
+                    <button class="flex md:hidden pt-[17px] pb-[17px] pl-[] ">
+                        <img src="./image/responsib/Group 248.svg" class="" alt="">
+                    </button>
+                </div>
+                <br>
+                <div class="flex md:pt-5 items-center gap-6  md:items-center md:gap-3 md:hidden">
+
+                    <p
+                        class="font-bold flex md:hidden text-base text-black border border-[#E1E0E0] rounded-[10px] pt-[14px] pb-[17px] pl-[27px] pr-[28px] ">
+                        8 (800) 55-11-607
+                    </p>
+                    <button
+                        class="pl-[30px] pr-[30px] pt-[17px] pb-[17px] bg-[#BB2649] rounded-[10px] font-normal text-sm text-white">
+                        Онлайн чат</button>
+                </div>
             </div>
 
-            <div class="xl:flex xl:items-center xl:gap-6 md:flex md:items-center md:gap-3">
-                <p class="xl:font-bold xl:text-base xl:text-black ">
+            <div class="md:flex items-center gap-6  md:items-center md:gap-3 hidden">
+                <p class="font-bold text-base text-black hidden md:flex ">
                     8 (800) 55-11-607
                     <br>
                     Позвонить Вам?
                 </p>
-                <p
-                    class="xl:hidden font-bold text-base pt-[14px] pb-[17px] pl-7 pr-7 text-black border border-solid border-[#E1E0E0] items-center rounded-[10px]">
+                <p class="font-bold flex md:hidden text-base text-black ">
                     8 (800) 55-11-607
                 </p>
                 <button
-                    class="xl:pl-[30px] xl:pr-[30px] xl:pt-3 xl:pb-3 xl:bg-[#BB2649] xl:rounded-[10px] xl:font-normal xl:text-sm xl:text-white">Напишите
+                    class="pl-[30px] pr-[30px] pt-3 pb-3 bg-[#BB2649] rounded-[10px] font-normal text-sm text-white">Напишите
                     нам <br>
-                    Онлайн чат</button>
-                <button
-                    class="font-normal text-sm text-white pl-[39px] pr-[39px] hidden pb-[17px] bg-[#BB2649] bg-[#BB2649] rounded-[10px] rounded-[10px] font-normal text-sm text-white text-center"><br>
                     Онлайн чат</button>
             </div>
         </div>
     </header>
-    <!-- <section class="">
+    <section class="">
         <div class="bg-[#BB2649]">
-            <div
-                class="pt-7 pb-7 ml-auto mr-auto pl-5 pr-5 max-w-[1280px] flex items-center gap-6">
-                <a href="#" class="flex items-center gap-6">
+            <div class="pt-7 pb-7 ml-auto mr-auto pl-5 pr-5 max-w-[1280px] md:flex items-center gap-6 hidden">
+                <a href="#" class="md:flex items-center gap-6 hidden  ">
                     <img src="./image/hero/house.svg" alt="" class="flex items-center object-cover">
                     <div class="h-11 bg-white w-[2px]"></div>
                 </a>
-                <ul class="flex gap-6">
+                <ul class="md:flex gap-6 hidden  ">
                     <li class="flex items-center"><a href=""
                             class=" flex items-center gap-4 font-normal text-lg text-white">ПРОДУКЦИЯ
                             <img src="./image/hero/chevron-down.svg" class="flex items-center " alt=""> </a></li>
@@ -101,8 +76,7 @@
                     <li class=""><a href="" class="font-normal text-lg text-white">ОТЗЫВЫ</a></li>
                     <li class=""><a href="" class="font-normal text-lg text-white">СЕРТИФИКАТЫ</a></li>
                     <li class=""><a href="" class="font-normal text-lg text-white">НОВОСТИ И СТАТЬИ</a></li>
-                    <li class=""><a href=""
-                            class="font-normal text-lg text-white flex  items-center gap-4">КОНТАКТЫ
+                    <li class=""><a href="" class="font-normal text-lg text-white flex  items-center gap-4">КОНТАКТЫ
                             <img src="./image/hero/chevron-down.svg" alt=""> </a></li>
                 </ul>
                 <a href="#" class="flex items-center gap-6 ">
@@ -115,9 +89,11 @@
             style="background-image: url(./image/hero/hero.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <div class=" ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
                 <div class="">
-                    <h1 class="font-bold pt-[185px] text-6xl text-white mb-[243px]">Экстерьерные пленки
+                    <h1
+                        class="font-bold md:pt-[185px] pt-[87px] pb-[85px] text-center md:text-left md:text-6xl text-white mb-[243px] text-lg">
+                        Экстерьерные пленки
                         DECORS</h1>
-                    <button class="flex items-center border-none pb-10 rounded-none">
+                    <button class="md:flex items-center border-none pb-10 rounded-none hidden">
                         <img src="./image/hero/arrow.svg" class="flex object-cover" alt="">
                     </button>
                 </div>
@@ -125,12 +101,11 @@
         </div>
     </section>
     <section class="">
-        <div class="ml-auto mr-auto pl-5 pl-5 max-w-[1280px] flex pt-10 gap-14 mb-10">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] md:flex pt-10 gap-14 mb-10 hidden">
             <div class="justify-center text-center items-center">
-                <img src="./image/decont/Group 294 (1).png" alt=""
-                    class="w-[447px] mb-10 h-[447px] flex object-cover">
+                <img src="./image/decont/Group 294 (1).png" alt="" class="w-[447px] mb-10 md:flex hidden h-[447px]">
                 <h2 class="font-bold text-5xl text-black mb-[10px]">8 (800) 55-11-607</h2>
-                <p class="font-normal text-[26px] text-black">info@decors-plo.ru</p>
+                <p class="font-normal text-[26px] text-black ">info@decors-plo.ru</p>
             </div>
             <div class="pt-5">
                 <h2 class="font-bold text-[40px] mb-20 text-center">Экстерьерные пленки DECORS</h2>
@@ -140,15 +115,40 @@
                 </div>
                 <p class="font-normal text-base mb-10">24 года эксплуатации без изменения цвета</p>
                 <div class="bg-[#DD93A4] border-none rounded-[5px] mb-2">
-                    <div
-                        class="bg-[#D42E5B] border-none text-center rounded-[5px] w-[40%] text-white text-[20px] ">
+                    <div class="bg-[#D42E5B] border-none text-center rounded-[5px] w-[40%] text-white text-[20px] ">
                         40%
                     </div>
                 </div>
                 <p class="text-black font-normal text-base mb-11">Акриловый слой плюс</p>
                 <div class="bg-[#DD93A4] border-none rounded-[5px] mb-2">
-                    <div
-                        class="bg-[#D42E5B] border-none rounded-[5px] w-[30%] text-center text-white text-[20px] ">
+                    <div class="bg-[#D42E5B] border-none rounded-[5px] w-[30%] text-center text-white text-[20px] ">
+                        40%
+                    </div>
+                </div>
+                <p class="text-black font-normal text-base mb-11">Акриловый слой плюс</p>
+            </div>
+        </div>
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]  gap-14 md:hidden">
+            <div class="justify-center text-center items-center">
+                <img src="./image/hero/Group 295.png" alt="" class="mb-[28px]  flex md:hidden">
+                <h2 class="font-bold md:text-5xl text-black mb-[10px] text-2xl">8 (800) 55-11-607</h2>
+                <p class="font-normal text-base text-black">info@decors-plo.ru</p>
+            </div>
+            <div class="pt-5">
+                <h2 class="font-bold mb-[15px] text-center text-[20px]">Экстерьерные пленки DECORS</h2>
+                <div
+                    class="bg-[#D42E5B] border-2 text-center text-white font-bold text-xl border-none rounded-[5px] mb-[5px] ">
+                    100%
+                </div>
+                <p class="font-normal text-sm mb-[10px]">24 года эксплуатации без изменения цвета</p>
+                <div class="bg-[#DD93A4] border-none rounded-[5px] mb-2">
+                    <div class="bg-[#D42E5B] border-none text-center rounded-[5px] w-[40%] text-white text-[20px] ">
+                        40%
+                    </div>
+                </div>
+                <p class="text-black font-normal text-sm mb-[10px]">Акриловый слой плюс</p>
+                <div class="bg-[#DD93A4] border-none rounded-[5px] mb-2">
+                    <div class="bg-[#D42E5B] border-none rounded-[5px] w-[30%] text-center text-white text-[20px] ">
                         40%
                     </div>
                 </div>
@@ -158,52 +158,89 @@
     </section>
     <section
         style="background-image: url(./image/decont/banner2.png); background-repeat: no-repeat; background-position: center; background-size: cover; object-fit: cover;"
-        class=" bg-no-repeat ml-auto mr-auto">
-        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] pt-10 pb-[93px]">
+        class=" bg-no-repeat ml-auto mr-auto md:flex hidden">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] pt-[30px] pb-[93px]">
             <h2 class="font-bold text-[40px] text-white text-center mb-[47px]">Преимущества DECORS</h2>
             <div class="flex gap-4">
                 <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
-                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
-                " class="pt-6">
-                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto"
-                        alt="">
-                    <p
-                        class="font-normal text-2xl text-center text-white pl-[46px] pr-[46px] mb-[25px]">
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
+                    " class="pt-6">
+                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto" alt="">
+                    <p class="font-normal text-2xl text-center text-white pl-[46px] pr-[46px] mb-[25px]">
                         Сертификат RAL</p>
                 </div>
                 <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
-                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
-                " class="pt-6">
-                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto"
-                        alt="">
-                    <p
-                        class="font-normal text-2xl text-center text-white pl-[31px] pr-[31px] mb-[25px]">
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
+                    " class="pt-6">
+                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto" alt="">
+                    <p class="font-normal text-2xl text-center text-white pl-[31px] pr-[31px] mb-[25px]">
                         Защита от нагрева</p>
                 </div>
                 <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;
 
-                box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
-                
-                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
-                border-radius: 10px;
-                " class="pt-6">
-                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto"
-                        alt="">
-                    <p
-                        class="font-normal text-2xl text-center text-white pl-[91px] pr-[91px] mb-[25px]">
+                    box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                    
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
+                    border-radius: 10px;
+                    " class="pt-6">
+                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto" alt="">
+                    <p class="font-normal text-2xl text-center text-white pl-[91px] pr-[91px] mb-[25px]">
                         Праймер</p>
                 </div>
                 <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;
-    
-                box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
-                  
-                box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
-                border-radius: 10px;
-                " class="pt-10">
-                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto"
-                        alt="">
-                    <p
-                        class="font-normal text-2xl text-center text-white pl-[85px] pr-[85px] mb-[25px]">
+        
+                    box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                    
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
+                    border-radius: 10px;
+                    " class="pt-10">
+                    <img src="./image/decont/check.svg" class="flex object-cover mb-4 ml-auto mr-auto" alt="">
+                    <p class="font-normal text-2xl text-center text-white pl-[85px] pr-[85px] mb-[25px]">
+                        Известный бренд</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        style="background-image: url(./image/decont/Group\ 294\ \(5\).png); background-repeat: no-repeat; background-position: center; background-size: cover; object-fit: cover;"
+        class=" bg-no-repeat ml-auto mr-auto flex md:hidden">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] pt-[30px] pb-10">
+            <h2 class="font-bold text-[20px] text-white text-center mb-[24px]">Преимущества DECORS</h2>
+            <div class="flex flex-wrap gap-4">
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
+                    " class="pt-3 pb-3 items-center flex gap-2 pl-[25px] pr-[153px]">
+                    <img src="./image/decont/check.svg" class="flex w-[29px] h-[29px]" alt="">
+                    <p class="font-normal text-lg flex text-center text-white  ">
+                        Сертификат RAL</p>
+                </div>
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset; border-radius: 10px;
+                    " class="flex items-center pl-[25px] pt-[17px] pb-[13px] gap-[10px] pr-[130px]">
+                    <img src="./image/decont/check.svg" class="flex w-[29px] h-[29px]" alt="">
+                    <p class="font-normal text-lg text-center text-white">
+                        Защита от нагрева</p>
+                </div>
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;
+
+                    box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                    
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
+                    border-radius: 10px;
+                    " class="flex items-center pl-[25px] pt-[17px] pb-[13px] gap-[10px] pr-[219px]">
+                    <img src="./image/decont/check.svg" class="flex w-[29px] h-[29px]" alt="">
+                    <p class="font-normal text-2xl text-center text-white ">
+                        Праймер</p>
+                </div>
+                <div style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset;
+        
+                    box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                    
+                    box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;
+                    border-radius: 10px;
+                    " class="flex items-center pl-[25px] pt-[17px] pb-[13px] gap-[10px] pr-[145px]">
+                    <img src="./image/decont/check.svg" class="flex w-[29px] h-[29px]" alt="">
+                    <p class="font-normal text-lg text-center text-white">
                         Известный бренд</p>
                 </div>
             </div>
@@ -211,214 +248,286 @@
     </section>
     <section class="pt-[60px] mb-[70px]">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1240px]">
-            <h2 class="text-black font-bold text-[40px] text-center mb-10">Услуги</h2>
-            <div class="flex gap-5 justify-center mb-10">
+            <h2 class="text-black md:font-semibold font-extrabold text-[20px] text-center mb-5 md:mb-10">Услуги</h2>
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-5 mb-10">
                 <div
-                    class="border border-dashed border-[#BB2649] rounded-[10px] pl-[40px] pr-[40px] pt-[60px] pb-[52px]">
-                    <h3 class="font-bold text-3xl text-black text-center mb-[48px]">ДЛЯ ПРОФЕССИОНАЛОВ</h3>
-                    <div class="flex gap-7 mb-6">
+                    class="border border-dashed border-[#BB2649] rounded-[10px] pl-[40px] pr-[40px] pt-[35px] pb-[30px] md:pt-[60px] md:pb-[52px]">
+                    <h3 class="font-bold md:text-3xl text-base text-black text-center mb-[25px] md:mb-[48px]">ДЛЯ
+                        ПРОФЕССИОНАЛОВ</h3>
+                    <div class="flex md:gap-7 gap-[17px] md:mb-[25px] mb-[14px]">
                         <div
-                            class="flex justify-center items-center bg-[#9F2436] border rounded-full w-[70px] h-[70px]">
-                            <img src="./image/decont/box.svg" class="flex object-cover" alt="">
+                            class="bg-[#9F2436] border rounded-full md:w-[70px] md:h-[70px] w-[41px] h-[41px] items-center justify-center flex ">
+                            <img src="./image/decont/bag.svg" class="flex md:w-[28px] md:h-[28px] w-[16px] h-[16px]"
+                                alt="">
                         </div>
-                        <p class="font-normal text-[26px] text-black">Бережная фирменная упаковка</p>
+                        <p class="md:text-[26px] text-sm md:text-black md:font-normal ">Бережная фирменная упаковка</p>
                     </div>
-                    <div class="flex gap-7 mb-6 items-center">
+                    <div class="flex md:gap-7 gap-[17px] md:mb-[25px] mb-[14px] items-center">
                         <div
-                            class="flex justify-center items-center bg-[#9F2436] border rounded-full w-[70px] h-[70px]">
-                            <img src="./image/decont/cutter.svg" class="flex object-cover" alt="">
+                            class="bg-[#9F2436] border rounded-full md:w-[70px] md:h-[70px] w-[41px] h-[41px] items-center justify-center flex ">
+                            <img src="./image/decont/cutter.svg" class="flex md:w-[28px] md:h-[28px] w-[16px] h-[16px]"
+                                alt="">
                         </div>
-                        <p class="font-normal text-[26px] text-black">Бесплатная резка пленки по <br> нужным
+                        <p class="md:text-[26px] md:text-black md:font-normal ">Бесплатная резка пленки по <Br> нужным
                             размерам</p>
                     </div>
-                    <div class="flex gap-7 items-center">
+                    <div class="flex md:gap-7 gap-[17px] md:mb-[25px] items-center">
                         <div
-                            class="flex justify-center items-center bg-[#9F2436] border rounded-full w-[70px] h-[70px]">
-                            <img src="./image/decont/shield.svg" class="flex object-cover" alt="">
+                            class="bg-[#9F2436] border rounded-full md:w-[70px] md:h-[70px] w-[41px] h-[41px] items-center justify-center flex ">
+                            <img src="./image/decont/shield.svg" class="flex md:w-[28px] md:h-[28px] w-[16px] h-[16px]"
+                                alt="">
                         </div>
-                        <p class="font-normal text-[26px] text-black">Доставка до терминала <br> транспортной
+                        <p class="md:text-[26px] md:text-black md:font-normal ">Доставка до терминала <br> транспортной
                             компании</p>
                     </div>
                 </div>
                 <div
                     class="border border-dashed border-[#BB2649] rounded-[10px] pl-[40px] pr-[40px] pt-[60px] pb-[52px]">
-                    <h3 class="font-bold text-3xl text-black text-center mb-[48px]">ДЛЯ ПРОФЕССИОНАЛОВ</h3>
-                    <div class="flex gap-7 mb-6 items-center">
+                    <h3 class="font-bold md:text-3xl text-base text-black text-center mb-[25px] md:mb-[48px]">ДЛЯ
+                        НОВИЧКОВ</h3>
+                    <div class="flex md:gap-7 gap-[17px] md:mb-[25px] items-center mb-[14px]">
                         <div
-                            class="flex justify-center items-center bg-[#9F2436] border rounded-full w-[70px] h-[70px]">
-                            <img src="./image/decont/bag.svg" class="flex object-cover" alt="">
+                            class="bg-[#9F2436] border rounded-full md:w-[70px] md:h-[70px] w-[41px] h-[41px] items-center justify-center flex ">
+                            <img src="./image/decont/bag.svg" class="flex md:w-[28px] md:h-[28px] w-[16px] h-[16px]"
+                                alt="">
                         </div>
-                        <p class="font-normal text-[26px] text-black">Помощь в расчете стартапа и<br> подборе
-                            оборудования</p>
+                        <p class="md:text-[26px] md:text-black md:font-normal text-sm ">Помощь в расчете стартапа и <Br>
+                            подборе оборудования</p>
                     </div>
-                    <div class="flex gap-7 mb-6 items-center">
+                    <div class="flex md:gap-7 gap-[17px] md:mb-[25px] items-center mb-[14px]">
                         <div
-                            class="flex justify-center  bg-[#9F2436] border rounded-full w-[70px] h-[70px]">
-                            <img src="./image/decont/dna.svg" class="flex object-cover" alt="">
+                            class="bg-[#9F2436] border rounded-full md:w-[70px] md:h-[70px] w-[41px] h-[41px] items-center justify-center flex ">
+                            <img src="./image/decont/dna.svg" class="flex md:w-[28px] md:h-[28px] " alt="">
                         </div>
-                        <p class="font-normal text-[26px] text-black">Консультация технолога</p>
+                        <p class="md:text-[26px] md:text-black md:font-normal ">Бесплатная резка пленки по <Br> нужным
+                            размерам</p>
                     </div>
-                    <div class="flex gap-7 items-center">
+                    <div class="flex md:gap-7 gap-[17px] md:mb-[25px] items-center">
                         <div
-                            class="flex justify-center items-center bg-[#9F2436] border rounded-full w-[70px] h-[70px]">
-                            <img src="./image/decont/book.svg" class="flex object-cover" alt="">
+                            class="bg-[#9F2436] border rounded-full md:w-[70px] md:h-[70px] w-[41px] h-[41px] items-center justify-center flex ">
+                            <img src="./image/decont/book.svg" class="flex md:w-[28px] md:h-[28px] h-[20px] w-[20px]"
+                                alt="">
                         </div>
-                        <p class="font-normal text-[26px] text-black">Обучение сотрудников</p>
+                        <p class="md:text-[26px] md:text-black md:font-normal ">Доставка до терминала <br> транспортной
+                            компании</p>
                     </div>
                 </div>
             </div>
             <button
-                class="text-white text-xl font-bold ml-[500px] mr-auto justify-center items-center text-center bg-[#D42E5B] rounded-[10px] pt-[18px] pl-[35px] pr-[35px] pb-[18px]">Сделать
+                class="text-white text-xl font-bold ml-[70px] mr-auto justify-center items-center md:ml-[490px] text-center bg-[#D42E5B] rounded-[10px] pt-[18px] pl-[35px] pr-[35px] pb-[18px]">Сделать
                 заказ</button>
         </div>
         </div>
     </section>
-    <section class="pt-[14px] mb-[60px]">
+    <section class=" mb-[60px]">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
-            <h2 class="font-bold text-[40px] text-black text-center mb-[57px]">Как работает заказ</h2>
-            <div class="flex gap-5 mb-[44px]">
-                <div class="w-[232px]">
-                    <p class="font-bold text-[72px] text-[#9F2436] mb-5 ">1</p>
+            <h2
+                class="md:font-bold font-semibold md:text-[40px] text-[20px] text-black text-center mb-[15px] md:mb-[57px]">
+                Как работает заказ</h2>
+            <div class="md:flex gap-5 mb-[44px] ">
+                <div class="md:w-[232px] text-center w-[360px] md:text-left">
+                    <p class="font-bold md:text-[72px] text-[50px] text-[#9F2436] md:mb-5 mb-[15px] ">1</p>
                     <h2 class="font-bold text-[40px] text-black mb-[15px]">
                         Заказ
                     </h2>
-                    <p class="font-normal text-[26px] text-black">Подготовьте и <br> отправьте заявку</p>
+                    <p class="font-normal md:text-[26px] text-[18px]  text-black">Подготовьте и отправьте заявку</p>
                 </div>
-                <div class="w-[232px]">
-                    <p class="font-bold text-[72px] text-[#9F2436] mb-5 ">2</p>
+                <div class="md:w-[232px] w-[360px] md:text-left text-center">
+                    <p class="font-bold md:text-[72px] text-[50px] text-[#9F2436] mb-5 ">2</p>
                     <h2 class="font-bold text-[40px] text-black mb-[15px]">
                         Счет
                     </h2>
                     <p class="font-normal text-[26px] text-black">Получите
-                        и <br> проверьте счет</p>
+                        и проверьте счет</p>
                 </div>
-                <div class="w-[232px]">
-                    <p class="font-bold text-[72px] text-[#9F2436] mb-5 ">3</p>
-                    <h2 class="font-bold text-[40px] text-black mb-[15px]">
+                <div class="md:w-[232px] w-[360px] text-center md:text-left">
+                    <p class="font-bold md:text-[72px] text-[50px] text-[#9F2436] mb-5 ">3</p>
+                    <h2 class="font-bold text-[40px]  text-black mb-[15px]">
                         Оплата
                     </h2>
-                    <p class="font-normal text-[26px] text-black">Подтвердите счет <br> и произведите<br>
+                    <p class="font-normal md:text-[26px] md:text-lg text-black">Подтвердите счет и произведите
                         оплату</p>
                 </div>
-                <div class="w-[232px]">
-                    <p class="font-bold text-[72px] text-[#9F2436] mb-5 ">4</p>
-                    <h2 class="font-bold text-[40px] text-black mb-[15px]">
+                <div class="md:w-[232px] w-[360px] text-center md:text-left">
+                    <p class="font-bold md:text-[72px] text-[50px] text-[#9F2436] mb-5 ">4</p>
+                    <h2 class="font-bold text-[40px]  text-black mb-[15px]">
                         Выбор ТК
                     </h2>
-                    <p class="font-normal text-[26px] text-black">Сообщите <br> пожелания по <br> доставке</p>
+                    <p class="font-normal md:text-[26px] text-lg text-black">Сообщите пожелания по доставке</p>
                 </div>
-                <div class="w-[232px]">
-                    <p class="font-bold text-[72px] text-[#9F2436] mb-5 ">5</p>
-                    <h2 class="font-bold text-[40px] text-black mb-[15px]">
+                <div class="md:w-[232px] w-[360px] text-center md:text-left">
+                    <p class="font-bold md:text-[72px] text-[50px] text-[#9F2436] mb-5 ">5</p>
+                    <h2 class="font-bold text-[40px]  text-black mb-[15px]">
                         Доставка
                     </h2>
-                    <p class="font-normal text-[26px] text-black">Получите свой <br> заказ</p>
+                    <p class="font-normal text-[26px] text-black">Получите свой заказ</p>
                 </div>
             </div>
-            <div style="background-image: url(./image/header/Group\ 294\ \(3\).png); background-position: center; background-repeat: no-repeat;  "
-                class="">
-                <h2 class="font-bold text-[28px] text-white text-center pt-[50px] mb-[50px]">Сделайте
-                    первый шаг</h2>
-                <button
-                    class=" bg-white border rounded-[10px] pt-[18px] pb-[18px] pl-[35px] pr-[35px] font-bold text-[20px] text-[#D42E5B] ml-[460px] mb-[60px]">Бесплатная
-                    консультация</button>
+            <div style="background-image: url(./image/header/Group\ 294\ \(3\).png); background-repeat: no-repeat;  "
+                class="md:flex hidden">
+                <div class="ml-auto mr-auto pt-[50px] pb-[60px] pl-[460px] pr-[454px]">
+                    <h2 class="font-bold text-[28px] mb-[30px] text-white text-center">Сделайте первый шаг</h2>
+                    <button
+                        class="pt-[18px] pb-[18px] pl-[35px] pr-[35px] border rounded-[10px] bg-white text-[#D42E5B] font-bold text-[20px]">Бесплатная
+                        консультация</button>
+                </div>
+            </div>
+            <div style="background-image: url(./image/hero/Group\ 294\ \(4\).png); background-repeat: no-repeat; background-size: cover"
+                class="flex md:hidden">
+                <div class="ml-auto mr-auto pt-[33px] pb-[30px] pl-[10px] pr-[10px]">
+                    <h2 class="font-semibold text-[28px] mb-6 w-[340px] text-white pl-[20px]">Сделайте первый шаг</h2>
+                    <button
+                        class="pt-[18px] ml-auto mr-auto pb-[18px] pl-[35px] pr-[35px] border rounded-[10px] bg-white text-[#D42E5B] font-bold text-[20px]">Бесплатная
+                        консультация</button>
+                </div>
             </div>
         </div>
     </section>
     <section class="mb-[50px]">
         <div class="ml-auto mr-auto pr-5 pl-5 max-w-[1300px]">
-            <h2 class="font-bold text-[40px] text-black text-center mb-[47px]">Отзывы клиентов</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide flex gap-[25px] items-center">
-                        <div class=" border border-[#BB264933] border-dotted mt-[-350px] rounded-[10px]">
-                            <div class="pt-[60px] pb-[60px] pl-[30px]">
-                                <p
-                                    class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
-                                    - Мы работаем больше 15 лет с разными пленками. Сейчас работаем с пленкой Decors.
-                                    Очень
-                                    довольны качеством товара. Спасибо производителю!
-                                </p>
-                                <h2 class="font-bold text-[26px] text-left">Анвар, Россия</h2>
+            <h2 class="font-bold md:text-[40px] text-[20px] text-black text-center mb-[47px]">Отзывы клиентов</h2>
+            <div class="md:flex hidden">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex gap-[25px] items-center">
+                            <div class=" border border-[#BB264933] border-dotted mt-[-350px] rounded-[10px]">
+                                <div class="pt-[60px] pb-[60px] pl-[30px]">
+                                    <p class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
+                                        - Мы работаем больше 15 лет с разными пленками. Сейчас работаем с пленкой
+                                        Decors.
+                                        Очень
+                                        довольны качеством товара. Спасибо производителю!
+                                    </p>
+                                    <h2 class="font-bold text-[26px] text-left">Анвар, Россия</h2>
+                                </div>
+                            </div>
+                            <div class="border border-[#BB264933] border-dotted rounded-[10px]">
+                                <div class="pt-[60px] pb-[60px] pl-[30px]">
+                                    <p class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
+                                        - Используем пленку Decors уже почти год. По качеству ничем не хуже других
+                                        пленок.
+                                        Конечно, нет такого разнообразия цветов, но в целом пленка хорошая. Клей ложится
+                                        хорошо,
+                                        тянется тоже хорошо. Толщина пленки нормальная. Применяем для всех наружных
+                                        ламинаций.
+                                        По качеству и цене самый лучший, на наш взгляд, вариант! Акриловый слой имеется.
+                                        В
+                                        общем, довольны пленкой Decors. По основным цветам - махагон, золотой дуб,
+                                        золотой
+                                        орех,
+                                        антрацит, темный дуб - мы полностью перешли на Decors.
+                                    </p>
+                                    <h2 class="font-bold text-[26px] text-left">Мурат, СНГ</h2>
+                                </div>
                             </div>
                         </div>
-                        <div class="border border-[#BB264933] border-dotted rounded-[10px]">
-                            <div class="pt-[60px] pb-[60px] pl-[30px]">
-                                <p
-                                    class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
-                                    - Используем пленку Decors уже почти год. По качеству ничем не хуже других пленок.
-                                    Конечно, нет такого разнообразия цветов, но в целом пленка хорошая. Клей ложится
-                                    хорошо,
-                                    тянется тоже хорошо. Толщина пленки нормальная. Применяем для всех наружных
-                                    ламинаций.
-                                    По качеству и цене самый лучший, на наш взгляд, вариант! Акриловый слой имеется. В
-                                    общем, довольны пленкой Decors. По основным цветам - махагон, золотой дуб, золотой
-                                    орех,
-                                    антрацит, темный дуб - мы полностью перешли на Decors.
-                                </p>
-                                <h2 class="font-bold text-[26px] text-left">Мурат, СНГ</h2>
+                        <div class="swiper-slide flex gap-[25px] items-center">
+                            <div class=" border border-[#BB264933] mt-[-230px] border-dotted rounded-[10px]">
+                                <div class="pt-[60px] pl-[30px] pb-[60px]">
+                                    <p class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
+                                        - Берем пленку Decors с 2018 года. За это время пленка зарекомендовала себя
+                                        наилучшим образом. Очень радует акриловый слой и конечно наличие сертификата
+                                        RAL.
+                                        Доступная цена делает пленку очень конкурентоспособной. Цветовая гамма не очень
+                                        большая, но радуют цвета антрацит и темный дуб, т.к. это основные цвета. Очень
+                                        не
+                                        хватает цвета «каштан» в палитре.
+                                    </p>
+                                    <h2 class="font-bold text-[26px] text-left">Виталий, Россияя</h2>
+                                </div>
+                            </div>
+                            <div class="border border-[#BB264933] border-dotted rounded-[10px]">
+                                <div class="pt-[60px] pb-[60px] pl-[30px]">
+                                    <p class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
+                                        - Работаем с Decors не первый год, за все время работы не было ни одного
+                                        отрицательного отзыва. Благодарим компанию за быстрое реагирование на заказ,
+                                        доставку всегда в оговоренные сроки, вежливое отношение к клиентам, хорошее
+                                        качество
+                                        продукции. Пленка для ламинации профиля Decors имеет яркий цвет, приятный
+                                        внешний
+                                        вид, мягкую основу, обладает морозоустойчивостью и высокой теплостойкостью, не
+                                        меняет своих цветовых свойств при изменении погодных факторов. Работать с
+                                        ламинационной пленкой Decors одно удовольствие. Спасибо вам за отличную работу,
+                                        успехов и процветания вашей компании.
+                                    </p>
+                                    <h2 class="font-bold text-[26px] text-left">Андрей, СНГ</h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide flex gap-[25px] items-center">
-                        <div class=" border border-[#BB264933] mt-[-230px] border-dotted rounded-[10px]">
-                            <div class="pt-[60px] pl-[30px] pb-[60px]">
-                                <p
-                                    class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
-                                    - Берем пленку Decors с 2018 года. За это время пленка зарекомендовала себя
-                                    наилучшим образом. Очень радует акриловый слой и конечно наличие сертификата RAL.
-                                    Доступная цена делает пленку очень конкурентоспособной. Цветовая гамма не очень
-                                    большая, но радуют цвета антрацит и темный дуб, т.к. это основные цвета. Очень не
-                                    хватает цвета «каштан» в палитре.
-                                </p>
-                                <h2 class="font-bold text-[26px] text-left">Виталий, Россияя</h2>
-                            </div>
-                        </div>
-                        <div class="border border-[#BB264933] border-dotted rounded-[10px]">
-                            <div class="pt-[60px] pb-[60px] pl-[30px]">
-                                <p
-                                    class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
-                                    - Работаем с Decors не первый год, за все время работы не было ни одного
-                                    отрицательного отзыва. Благодарим компанию за быстрое реагирование на заказ,
-                                    доставку всегда в оговоренные сроки, вежливое отношение к клиентам, хорошее качество
-                                    продукции. Пленка для ламинации профиля Decors имеет яркий цвет, приятный внешний
-                                    вид, мягкую основу, обладает морозоустойчивостью и высокой теплостойкостью, не
-                                    меняет своих цветовых свойств при изменении погодных факторов. Работать с
-                                    ламинационной пленкой Decors одно удовольствие. Спасибо вам за отличную работу,
-                                    успехов и процветания вашей компании.
-                                </p>
-                                <h2 class="font-bold text-[26px] text-left">Андрей, СНГ</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide flex gap-[25px] items-center">
-                        <div class=" border border-[#BB264933] border-dotted rounded-[10px]">
-                            <div class="pt-[60px] pb-[60px] pl-[30px]">
-                                <p
-                                    class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
-                                    - Неплохая пленка, работаем полгода, нареканий от потребителей нашей продукции нет.
-                                    Спасибо.
-                                </p>
-                                <h2 class="font-bold text-[26px] text-left">Валерий, Россия</h2>
+                        <div class="swiper-slide flex gap-[25px] items-center">
+                            <div class=" border border-[#BB264933] border-dotted rounded-[10px]">
+                                <div class="pt-[60px] pb-[60px] pl-[30px]">
+                                    <p class="font-normal text-[26px] text-black w-[549px] text-left mb-6">
+                                        - Неплохая пленка, работаем полгода, нареканий от потребителей нашей продукции
+                                        нет.
+                                        Спасибо.
+                                    </p>
+                                    <h2 class="font-bold text-[26px] text-left">Валерий, Россия</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="flex md:hidden">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide gap-[25px] items-center">
+                            <div class=" border border-[#BB264933] border-dotted mt-[-350px] rounded-[10px]">
+                                <div class="pt-[60px] pb-[60px] pl-[30px]">
+                                    <p class="font-normal md:text-[26px] text-base text-black w-[549px] text-left mb-6">
+                                        - Мы работаем больше 15 лет с разными пленками. Сейчас работаем с пленкой
+                                        Decors.
+                                        Очень
+                                        довольны качеством товара. Спасибо производителю!
+                                    </p>
+                                    <h2 class="font-bold md:text-[26px] text-left">Анвар, Россия</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex gap-[25px] items-center">
+                            <div class=" border border-[#BB264933] mt-[-230px] border-dotted rounded-[10px]">
+                                <div class="pt-[60px] pl-[30px] pb-[60px]">
+                                    <p class="font-normal md:text-[26px] text-base text-black w-[549px] text-left mb-6">
+                                        - Берем пленку Decors с 2018 года. За это время пленка зарекомендовала себя
+                                        наилучшим образом. Очень радует акриловый слой и конечно наличие сертификата
+                                        RAL.
+                                        Доступная цена делает пленку очень конкурентоспособной. Цветовая гамма не очень
+                                        большая, но радуют цвета антрацит и темный дуб, т.к. это основные цвета. Очень
+                                        не
+                                        хватает цвета «каштан» в палитре.
+                                    </p>
+                                    <h2 class="font-bold text-[26px] text-left">Виталий, Россияя</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <section
-        style="background-image: url(./image/header/Group\ 225.png); background-position: center; background-size: cover; background-repeat: no-repeat;"
+        style="background-image: url(./image/header/Group\ 225\ \(1\).png); background-position: center; background-size: cover; background-repeat: no-repeat;"
         class="mb-[60px]">
         <div
-            class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] flex justify-between items-center text-center pt-[88px] pb-[88px] ">
+            class="ml-auto md:flex hidden mr-auto pl-5 pr-5 max-w-[1280px]  justify-between items-center text-center pt-[88px] pb-[88px] ">
             <h2 class="font-bold text-white text-[40px]">Нужна помощь менеджера?</h2>
             <button
                 class="text-[#D42E5B] text-xl font-bold border border-white bg-white rounded-[10px] pl-[35px] pr-[35px] pt-[18px] pb-[18px] ">Обсудить
                 заказ</button>
         </div>
     </section>
-    <section class="mb-[60px]">
+    <section
+        style="background-image: url(./image/header/Rectangle\ 42.png); background-position: center; background-size: cover; background-repeat: no-repeat;"
+        class=" md:hidden flex">
+        <div
+            class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] justify-between items-center text-center pt-[88px] pb-[88px] ">
+            <h2 class="font-bold text-white md:text-[40px] text-base mb-[22px]">Нужна помощь менеджера?</h2>
+            <button
+                class="text-[#D42E5B] md:text-xl text-sm font-bold border border-white bg-white rounded-[10px] md:pl-[35px] md:pr-[35px] md:pt-[18px] md:pb-[18px] pt-[10px] pb-[10px] pl-[20px] pr-[20px]">Обсудить
+                заказ</button>
+        </div>
+    </section>
+    <!-- <section class="mb-[60px]">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
             <h2 class="font-bold text-[40px] text-[#27272A] text-center mb-[47px]">Новости</h2>
             <div class="flex gap-[30px]">
@@ -459,8 +568,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="bg-[#BB2649]">
+    </section> -->
+    <!-- <footer class="bg-[#BB2649]">
         <div class="ml-auto mr-auto pl-5 pt-20 pb-[60px] pr-5 max-w-[1280px]">
             <div class="flex gap-[141px] mb-[60px]">
                 <div class="w-[489px]">
@@ -480,8 +589,7 @@
                         <li class=""><a href="" class="font-normal text-2xl mb-1 text-white">Продукция</a>
                         </li>
                         <li class=""><a href="" class="font-normal text-2xl mb-1 text-white">Услуги</a></li>
-                        <li class=""><a href=""
-                                class="font-normal text-2xl mb-1 text-white">Преимущества</a></li>
+                        <li class=""><a href="" class="font-normal text-2xl mb-1 text-white">Преимущества</a></li>
                         <li class=""><a href="" class="font-normal text-2xl mb-1 text-white">Акции</a></li>
                     </ul>
                     <ul class="w-[300px]">
@@ -493,7 +601,8 @@
                     </ul>
                 </div>
             </div>
-            <a class="font-normal text-center items-center justify-center flex text-2xl gap-[5px] text-white"><img src="./image/footer/©.svg" class="flex object-cover" alt=""> 2024 Экстерьерные пленки
+            <a class="font-normal text-center items-center justify-center flex text-2xl gap-[5px] text-white"><img
+                    src="./image/footer/©.svg" class="flex object-cover" alt=""> 2024 Экстерьерные пленки
                 DECORS Самоклеящиеся листы для ламинации сэндвича</a>
         </div>
     </footer> -->
