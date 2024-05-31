@@ -15,17 +15,17 @@
 
 <body>
     <!-- --------------------------------------------------------------- HEADER --------------------------------------------------------------- -->
-    <!-- <header class="pt-5 pb-[10px]">
+    <header class="pt-5 ">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center sm:gap-[56px] justify-between w-[630px] mb-5">
+            <div class="flex items-center justify-between mb-5">
+                <div class="flex items-center sm:gap-[56px] justify-between sm:justify-normal w-[630px]">
                     <a href="#" class="flex">
                         <img src="./image/header/logo.svg" alt=""
                             class="flex sm:w-[274px] sm:h-[79] w-[200px] h-[58px]">
                     </a>
                     <p class="font-normal text-base text-[#27272A] sm:flex hidden">Экстерьерные пленки DECORS</p>
                     <div class="items-center flex sm:hidden">
-                        <button class="items-center flex sm:hidden" id="menu">
+                        <button id="hamburger-menu" class="items-center flex sm:hidden" id="menu">
                             <img src="./image/header/menu.svg" class="flex" alt="">
                         </button>
                     </div>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gap-5 justify-between items-center flex sm:hidden">
+            <div class="gap-5 justify-between items-center flex sm:hidden ">
                 <a href="#"
                     class="font-bold text-base text-[#000000] pt-[14px] pb-[17px] pl-[25px] pr-[25px] border-[#E1E0E0] rounded-[10px] border-[1px]">
                     8 (800) 55-11-607
@@ -52,89 +52,76 @@
                     Онлайн чат
                 </a>
             </div>
-            <div class="">
-                <div class="sm:flex hidden items-center">
-                    <img src="./image/header/house.svg" class="flex" alt="">
-                    <div class="h-[45px] w-[1px] bg-white"></div>
+            <div class="bg-[#BB2649]">
+                <div id="responsive-menu" style="transition: .7s all;"
+                    class="w-full pt-[30px] pl-[50px] pb-[116px] pr-[30px] top-0 -right-full fixed bg-[#BB2649]">
+                    <button class="ml-[250px]">
+                        <img id="close__menu" src="./image/header/close.svg" class="flex" alt="">
+                    </button>
+                    <ul class="mb-[22px]">
+                        <li class="flex items-center mb-[10px]"><a href="#"
+                                class=" text-white flex items-center">ПРОДУКЦИЯ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#" class=" text-base mb-[10px] text-white">УСЛУГИ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">ПРЕИМУЩЕСТВА</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">АКЦИИ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">ОТЗЫВЫ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">СЕРТИФИКАТЫ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">НОВОСТИ И СТАТЬИ</a>
+                        </li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="flex items-center"><a href="#"
+                                class="sm:font-normal sm:text-lg text-white flex items-center">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div class="flex items-center gap-[10px]">
+                        <label for="">
+                            <input type="text" placeholder="Что будем искать?"
+                                class="text-[#E1E0E0] bg-white text-sm font-normal pt-[14px] pb-[14px] pl-[13px] pr-[40px] rounded-[10px] border-none">
+                        </label>
+                        <button
+                            class="text-white font-bold text-sm pt-[14px] pb-[14px] pl-5 pr-5 bg-[#D42E5B] border-none rounded-[10px]">Найти</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </header> -->
+        <div class="bg-[#BB2649]">
+            <div class="sm:flex hidden ml-auto mr-auto max-w-[1280px] pl-5 pr-5">
+                <ul class="sm:flex sm:gap-5 sm:pt-7 sm:pb-7 sm:items-center sm:ml-10">
+                    <div class="flex items-center gap-5">
+                        <img src="./image/header/house.svg" class="flex" alt="">
+                        <div class="w-[1px] h-[45px] bg-white"></div>
+                    </div>
+                    <li class="flex items-center"><a href="#"
+                            class="sm:font-normal sm:text-lg text-white flex items-center">ПРОДУКЦИЯ</a> <img
+                            src="./image/header/button.svg" class="flex" alt=""> </li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">УСЛУГИ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">ПРЕИМУЩЕСТВА</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">АКЦИИ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">ОТЗЫВЫ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">СЕРТИФИКАТЫ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">НОВОСТИ И СТАТЬИ</a></li>
+                    <li class="flex items-center"><a href="#"
+                            class="sm:font-normal sm:text-lg text-white flex items-center">КОНТАКТЫ</a><img
+                            src="./image/header/button.svg" class="flex" alt=""></li>
+                    <div class="flex items-center gap-5">
+                        <div class="w-[1px] h-[45px] bg-white"></div>
+                        <img src="./image/header/search.svg" class="flex" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
     <!-- --------------------------------------------------------------- HEADER STOP --------------------------------------------------------------- -->
-
-    <!-- --------------------------------------------------------------- HEADER BUTTON --------------------------------------------------------------- -->
-    <!-- <header class="bg-[#BB2649] hidden">
-        <div class=" mx-auto pl-5 pr-5 max-w-[1280px] hidden">
-            <div class="flex items-center gap-5">
-                <div class="sm:flex gap-5 hidden items-center">
-                    <img src="./image/header/house.svg" class="flex" alt="">
-                    <div class="h-[45px] w-[1px] bg-white"></div>
-                </div>
-                <ul class="flex gap-5">
-                    <li class=""><a href="#"
-                            class="font-normal text-lg text-white items-center flex gap-[10px]">ПРОДУКЦИЯ <img
-                                src="./image/header/button.svg" class="sm:flex hidden" alt=""></a></li>
-                    <li class=""><a href="#" class="font-normal text-lg text-white">УСЛУГИ</a></li>
-                    <li class=""><a href="#" class="font-normal text-lg text-white">ПРЕИМУЩЕСТВА</a></li>
-                    <li class=""><a href="#" class="font-normal text-lg text-white">АКЦИИ</a></li>
-                    <li class=""><a href="#" class="font-normal text-lg text-white">ОТЗЫВЫ</a></li>
-                    <li class=""><a href="#" class="font-normal text-lg text-white">СЕРТИФИКАТЫ</a></li>
-                    <li class=""><a href="#" class="font-normal text-lg text-white">НОВОСТИ И СТАТЬИ</a></li>
-                    <li class=""><a href="#"
-                            class="font-normal text-lg text-white items-center flex gap-[10px]">КОНТАКТЫ <img
-                                src="./image/header/button.svg" class="sm:flex hidden" alt=""></a></li>
-                </ul>
-                <div class="sm:flex hidden gap-5 items-center">
-                    <div class="h-[45px] w-[1px] bg-white"></div>
-                    <img src="./image/header/search.svg" class="flex" alt="">
-                </div>
-            </div>
-        </div>
-        <div class=" mx-auto z-[-1] sm:z-auto -mt-[165px]" id="enter">
-            <div class="mx-auto pl-8 pr-8 justify-center pt-[30px]">
-                <div class="pl-[300px] mb-[18px]">
-                    <button class="flex " id="close">
-                        <img src="./image/header/close.svg" class="flex w-[30px] h-[30px]" alt="">
-                    </button>
-                </div>
-                <ul class="mb-[22px]">
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Главная</a></li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Продукция</a>
-                    </li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Услуги</a></li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Преимущества</a>
-                    </li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Акции</a></li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Отзывы</a></li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Сертификаты</a>
-                    </li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Новости и
-                            статьи</a></li>
-                    <div class="w-[326px] bg-[#D42E5B] mb-[10px] h-[1px]"></div>
-                    <li class="mb-[10px]"><a href="#" class="font-bold text-base text-white mb-[10px]">Контакты</a></li>
-                    <div class="w-[326px] bg-[#D42E5B] h-[1px]"></div>
-                </ul>
-                <div class="flex items-center gap-[10px]">
-                    <label for="" class="bg-white border-white rounded-[10px]">
-                        <input type="text" placeholder="Что будем искать?"
-                            class="rounded-[10px Q] pt-[14px] pb-[14px] pl-[15px] pr-[30px] font-normal text-sm text-[#E1E0E0]">
-                    </label>
-                    <button
-                        class="font-bold text-sm text-white pt-[14px] pb-[14px] pl-7 pr-7 border rounded-[10px] border-none bg-[#D42E5B]">
-                        Найти
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header> -->
-    <!-- --------------------------------------------------------------- HEADER BUTTON --------------------------------------------------------------- -->
 
     <!-- --------------------------------------------------------------- HERO --------------------------------------------------------------- -->
     <section
@@ -414,8 +401,8 @@
                 </div>
             </div>
             <div style="background-image: url(./image/how/banner.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
-                class="md:flex hidden text-center justify-center">
-                <div class="sm:pt-[50px] sm:pb-[60px] text-center">
+                class="sm:flex hidden justify-center">
+                <div class="pt-[50px] sm:pb-[60px] items-center">
                     <h2 class="sm:font-bold sm:text-[28px] sm:mb-[30px] text-white">Сделайте первый шаг</h2>
                     <button
                         class="sm:font-bold sm:text-[20px] text-[#D42E5B] sm:pt-[18px] sm:pb-[18px] sm:pl-[35px] sm:pr-[35px] border-none rounded-[10px] bg-white ">Бесплатная
@@ -423,12 +410,12 @@
                 </div>
             </div>
             <div style="background-image: url(./image/how/bannertwo.png); background-repeat: no-repeat; background-position: center; "
-                class="flex sm:hidden text-center justify-center mx-auto">
-                <div class="pt-[33px] pb-[30px] text-center">
+                class="flex sm:hidden text-center sm:justify-between justify-center mx-auto">
+                <div class="pt-[33px] pb-[30px ]">
                     <h2 class="font-semibold sm:text-[28px] mb-[24px] text-[20px] text-white">Сделайте первый шаг
                     </h2>
                     <button
-                        class="sm:font-bold sm:text-[20px] text-[#D42E5B] pt-[11px] pb-[11px] pl-[19px] pr-[19px] border-[#D42E5B] border-[3px] rounded-[10px] bg-white ">Бесплатная
+                        class="sm:font-bold sm:text-[20px] text-[#D42E5B] pt-[11px] pb-[11px] pl-[19px] mb-[30px] pr-[19px] border-[#D42E5B] border-[3px] rounded-[10px] bg-white ">Бесплатная
                         консультация</button>
                 </div>
             </div>
@@ -443,7 +430,12 @@
                 class="text-[#27272A] sm:font-bold font-semibold text-[20px] sm:text-[40px] text-center sm:mb-[47px] mb-5">
                 Отзывы клиентов</h2>
             <div class="sm:mb-[50px] sm:block hidden">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper flex items-center">
+                    <button
+                        class="swiper-button-prev1 bg-[#D42E5B] w-20 h-20 rounded-full border-none text-white -mr-10">
+                        <img src="./image/customer/left.svg" class="flex items-center mx-auto" alt="">
+                    </button>
+
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="flex gap-5">
@@ -514,11 +506,10 @@
                         </div>
                     </div>
                     <button
-                        class="swiper-button-next bg-[#D42E5B] w-20 h-20 rounded-full border-none text-white -mr-[50px]"></button>
-                    <button
-                        class="swiper-button-prev bg-[#D42E5B] w-20 h-20 rounded-full border-none text-white -ml-[50px]"></button>
+                        class="swiper-button-next1 bg-[#D42E5B]  w-20 h-20 rounded-full border-none text-white ml-[30px]">
+                        <img src="./image/customer/right.svg" class="flex items-center mx-auto" alt="">
+                    </button>
                     <div class="flex text-right">
-                        <p class="font-bold text-[20px] text-black text-right ml-auto mr-4">Показать больше отзывов</p>
                         <button class="swiper-pagination text-[#D42E5B]"></button>
                     </div>
                 </div>
@@ -625,35 +616,112 @@
     <!-- --------------------------------------------------------------- CUSTOMER STOP --------------------------------------------------------------- -->
 
     <!-- --------------------------------------------------------------- NEW --------------------------------------------------------------- -->
-    <section class="sm:mb-[60px]">
+    <section class="sm:mb-[60px] mb-[30px]">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
-            <h2 class="text-[#27272A] text-center sm:font-bold sm:text-[40px] sm:mb-10 mb-[19px] font-semibold text-[20px]">Новости</h2>
-            <div class="sm:flex justify-center ml-auto mr-auto sm:gap-[30px]">
-                <div class="mb-3">
-                    <img src="./image/news/Rectangle 24.png" alt="" class="flex sm:w-[393px] mb-4 sm:h-[300px] w-[360px] h-[274px] sm:mb-6">
-                    <p class="font-normal text-base sm:text-2xl text-black w-[400px] sm:mb-6 mb-3">Ведущие клиенты компании «ДекорС» посе <Br> завод компании Decors L&C в Сеуле</p>
+            <h2
+                class="text-[#27272A] text-center sm:font-bold sm:text-[40px] sm:mb-10 mb-[19px] font-semibold text-[20px]">
+                Новости</h2>
+            <div class="sm:flex sm:gap-[30px] mx-auto sm:mx-0 justify-center text-center">
+                <div class="mb-3 mx-auto sm:mx-auto text-center sm:text-left">
+                    <img src="./image/news/Rectangle 24.png" alt=""
+                        class="flex sm:w-[393px] mb-4 sm:h-[300px] w-[360px] h-[274px] sm:mx-0 mx-auto sm:mb-6">
+                    <p class="font-normal text-base sm:text-2xl text-black w-[400px] sm:mb-6 mb-3 mx-auto sm:mx-0">
+                        Ведущие клиенты
+                        компании <Br> завод компании Decors L&C в Сеуле</p>
                     <a href="#" class="font-bold text-base sm:text-[20px] underline">Подробнее »</a>
                 </div>
-                <div class="mb-5">
-                    <img src="./image/news/Rectangle 24 (1).png" alt="" class="flex sm:w-[393px] sm:h-[300px] w-[360px] h-[275px] mb-[15px] sm:mb-6">
-                    <p class="font-normal text-base mb-3 sm:text-2xl text-black w-[400px] sm:mb-6">«ДекорС» на Eurasia Window 2019</p>
+                <div class="mb-5 text-center sm:text-left">
+                    <img src="./image/news/Rectangle 24 (1).png" alt=""
+                        class="flex sm:w-[393px] sm:h-[300px] w-[360px] h-[275px] mb-[15px] sm:mb-6 mx-auto sm:mx-0">
+                    <p class="font-normal text-base mb-3 sm:text-2xl text-black w-[400px] sm:mb-6 mx-auto sm:mx-0">
+                        «ДекорС» на Eurasia
+                        Window 2019</p>
                     <a href="#" class="font-bold text-base sm:text-[20px] underline">Подробнее »</a>
                 </div>
                 <div style="box-shadow: 0px 0px 14px 0px rgba(212, 46, 91, 0.1);" class="">
-                    <div class="sm:pt-[50px] sm:pb-[50px] text-center sm:pl-[18px] sm:pr-[18px] pt-[34px] pb-5 pl-4 pr-4 justify-center mx-auto">
-                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">Decors на MosBuild 2019</h2>
+                    <div
+                        class="sm:pt-[50px] sm:pb-[50px] sm:text-left text-center sm:pl-[18px] sm:pr-[18px] pt-[34px] pb-5 pl-4 pr-4 justify-center mx-auto">
+                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">Decors на MosBuild
+                            2019</h2>
                         <div class="mb-[27px] sm:w-[356px] w-full  sm:mb-[30px] bg-[#E1E0E0] h-[1px] mx-auto"></div>
-                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">Decors - 24 года эксплуатации без изменений цвета</h2>
+                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">Decors - 24 года
+                            эксплуатации без изменений цвета</h2>
                         <div class="mb-[27px] sm:w-[356px] w-full  sm:mb-[30px] bg-[#E1E0E0] h-[1px] mx-auto"></div>
-                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">Decors на MosBuild 2021</h2>
+                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">Decors на MosBuild
+                            2021</h2>
                         <div class="mb-[27px] sm:w-[356px] w-full  sm:mb-[30px] bg-[#E1E0E0] h-[1px] mx-auto"></div>
-                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">В палитре пленок Decors появились новые популярные люксовые цвета по цене основных.</h2>
+                        <h2 class="font-bold sm:text-[20px] text-base text-black sm:mb-[30px] mb-6">В палитре пленок
+                            Decors появились новые популярные люксовые цвета по цене основных.</h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- --------------------------------------------------------------- NEW STOP --------------------------------------------------------------- -->
+
+    <!-- --------------------------------------------------------------- FOOTER --------------------------------------------------------------- -->
+    <footer class="bg-[#BB2649]">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] sm:pt-20 pt-[30px] pb-6 sm:pb-[60px]">
+            <div class="sm:flex block sm:justify-between sm:ml-4  justify-center sm:mb-[60px] mb-10">
+                <ul class=" text-center">
+                    <div class="sm:flex sm:items-center gap-[15px] sm:mb-[5px] mb-[10px] text-center sm:text-left">
+                        <img src="./image/footer/phone.svg"
+                            class="flex mx-auto sm:mx-0 mb-2 w-6 h-6 sm:w-[34px] sm:h-[34px]" alt="">
+                        <li class=""><a href="#"
+                                class="sm:underline font-normal sm:text-2xl  text-sm text-white mx-auto sm:mx-0">8 (800)
+                                55-11-607</a></li>
+                    </div>
+                    <li class="sm:flex gap-1 sm:items-center text-center sm:text-left sm:pl-[50px]  mb-[5px]"><a
+                            href="#" class="sm:text-2xl text-sm font-normal text-white">WhatsApp:</a><a href="#"
+                            class="sm:text-2xl text-sm font-normal text-white sm:underline">+79833887010</a> </li>
+                    <li class="sm:flex gap-1 sm:items-center text-center sm:text-left sm:pl-[50px] sm:mb-5 mb-[18px]"><a
+                            href="#" class="sm:text-2xl text-sm font-normal text-white">E-mail:</a><a href="#"
+                            class="sm:text-2xl text-sm font-normal text-white sm:underline">info@decors-pro.ru</a> </li>
+                    <div class="sm:flex sm:items-center text-center sm:text-left gap-[15px] sm:mb-[5px] mb-[45px]">
+                        <img src="./image/footer/location.svg"
+                            class="flex mx-auto sm:mx-0 w-6 h-6 sm:w-[34px] sm:h-[34px] mb-4 " alt="">
+                        <li class=""><a href="#" class=" font-normal sm:text-2xl text-sm  text-white">г. Солнечногорск,
+                                ул.
+                                Красная, 161</a></li>
+                    </div>
+                </ul>
+                <div class="sm:flex block text-center sm:text-left gap-[10px]">
+                    <ul class="sm:w-[300px]">
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-white text-base mb-[5px]">Продукция</a></li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-white text-base mb-[5px]">Услуги</a></li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-white text-base mb-[5px]">Преимущества</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Акции</a></li>
+                    </ul>
+                    <ul class="sm:w-[300px]">
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Отзывы</a></li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Сертификаты</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Новости и
+                                статьи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:flex  text-center block sm:mx-0 mx-auto">
+                <a href="#"
+                    class="flex items-center justify-center text-center sm:ml-auto ml-auto mr-auto sm:mr-auto text-white font-normal sm:text-2xl">
+                    <img src="./image/footer/©.svg" class="flex" alt="">
+                    2024 Экстерьерные пленки DECORS
+                </a>
+                <a href="" class="text-center text-white font-normal sm:ml-auto mr-auto ml-auto sm:mr-auto sm:text-2xl">
+                    Самоклеящиеся листы для ламинации сэндвича
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- --------------------------------------------------------------- FOOTER STOP --------------------------------------------------------------- -->
 
     <!-- --------------------------------------------------------------- JS APP --------------------------------------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
