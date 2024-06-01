@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- --------------------------------------------------------------- HEADER --------------------------------------------------------------- -->
+    <header class="pt-5 sm:mb-[60px] mb-[30px]">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
+            <div class="flex items-center justify-between mb-5">
+                <div class="flex items-center sm:gap-[56px] justify-between sm:justify-normal w-[630px]">
+                    <a href="#" class="flex">
+                        <img src="./image/header/logo.svg" alt=""
+                            class="flex sm:w-[274px] sm:h-[79] w-[200px] h-[58px]">
+                    </a>
+                    <p class="font-normal text-base text-[#27272A] sm:flex hidden">Экстерьерные пленки DECORS</p>
+                    <div class="items-center flex sm:hidden">
+                        <button id="hamburger-menu" class="items-center flex sm:hidden" id="menu">
+                            <img src="./image/header/menu.svg" class="flex" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="gap-5 items-center sm:flex hidden">
+                        <a href="#" class="font-bold text-base text-[#27272A]">
+                            8 (800) 55-11-607 <br>Позвонить Вам?
+                        </a>
+                        <a href="#"
+                            class="font-normal text-sm text-white pt-3 pb-3 pl-[30px] pr-[30px] bg-[#D42E5B] hover:bg-[#9F2436] border-none rounded-[10px]">
+                            Напишите нам <br> Онлайн чат
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="gap-5 justify-between items-center flex sm:hidden ">
+                <a href="#"
+                    class="font-bold text-base text-[#000000] pt-[14px] pb-[17px] pl-[25px] pr-[25px] border-[#E1E0E0] rounded-[10px] border-[1px]">
+                    8 (800) 55-11-607
+                </a>
+                <a href="#"
+                    class="font-normal text-sm text-white pt-[17px] pb-[17px] pl-[30px] pr-[30px] bg-[#D42E5B] hover:bg-[#9F2436] border-none rounded-[10px]">
+                    Онлайн чат
+                </a>
+            </div>
+            <div class="bg-[#BB2649]">
+                <div id="responsive-menu" style="transition: .7s all;"
+                    class="w-full pt-[30px] pl-[50px] pb-[116px] pr-[30px] top-0 -right-full fixed bg-[#BB2649]">
+                    <button class="ml-[250px]">
+                        <img id="close__menu" src="./image/header/close.svg" class="flex" alt="">
+                    </button>
+                    <ul class="mb-[22px]">
+                        <li class="flex items-center mb-[10px]"><a href="#"
+                                class=" text-white flex items-center">ПРОДУКЦИЯ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#" class=" text-base mb-[10px] text-white">УСЛУГИ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">ПРЕИМУЩЕСТВА</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">АКЦИИ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">ОТЗЫВЫ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">СЕРТИФИКАТЫ</a></li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="mb-[10px]"><a href="#"
+                                class="sm:font-normal sm:text-lg text-base mb-[10px] text-white">НОВОСТИ И СТАТЬИ</a>
+                        </li>
+                        <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
+                        <li class="flex items-center"><a href="#"
+                                class="sm:font-normal sm:text-lg text-white flex items-center">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div class="flex items-center gap-[10px]">
+                        <label for="">
+                            <input type="text" placeholder="Что будем искать?"
+                                class="text-[#E1E0E0] bg-white text-sm font-normal pt-[14px] pb-[14px] pl-[13px] pr-[40px] rounded-[10px] border-none">
+                        </label>
+                        <button
+                            class="text-white font-bold text-sm pt-[14px] pb-[14px] pl-5 pr-5 bg-[#D42E5B] border-none rounded-[10px]">Найти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#BB2649]">
+            <div class="sm:flex hidden ml-auto mr-auto max-w-[1280px] pl-5 pr-5">
+                <ul class="sm:flex sm:gap-5 sm:pt-7 sm:pb-7 sm:items-center sm:ml-10">
+                    <div class="flex items-center gap-5">
+                        <img src="./image/header/house.svg" class="flex" alt="">
+                        <div class="w-[1px] h-[45px] bg-white"></div>
+                    </div>
+                    <li class="flex items-center"><a href="#"
+                            class="sm:font-normal sm:text-lg text-white flex items-center">ПРОДУКЦИЯ</a> <img
+                            src="./image/header/button.svg" class="flex" alt=""> </li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">УСЛУГИ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">ПРЕИМУЩЕСТВА</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">АКЦИИ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">ОТЗЫВЫ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">СЕРТИФИКАТЫ</a></li>
+                    <li class=""><a href="#" class="sm:font-normal sm:text-lg text-white">НОВОСТИ И СТАТЬИ</a></li>
+                    <li class="flex items-center"><a href="#"
+                            class="sm:font-normal sm:text-lg text-white flex items-center">КОНТАКТЫ</a><img
+                            src="./image/header/button.svg" class="flex" alt=""></li>
+                    <div class="flex items-center gap-5">
+                        <div class="w-[1px] h-[45px] bg-white"></div>
+                        <img src="./image/header/search.svg" class="flex" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------------------------------------------- HEADER STOP --------------------------------------------------------------- -->
+
+    <!-- --------------------------------------------------------------- CATALOG--------------------------------------------------------------- -->
+    <section class="sm:mb-[60px] mb-[30px]">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
+            <ul class="flex items-center gap-2 sm:mb-[15px] mb-6">
+                <li class=""><a href="#" class="text-black font-normal sm:text-base text-xs">Главная /</a></li>
+                <li class=""><a href="#" class="text-black font-normal sm:text-base text-xs">Продукция/</a></li>
+                <li class=""><a href="#" class="text-black font-normal sm:text-base text-xs">Экстерьерные плёнки/</a>
+                <li class=""><a href="#" class="text-black font-normal sm:text-base text-xs">Hyundai</a>
+                </li>
+            </ul>
+            <h1 class="sm:font-bold font-semibold  sm:text-black sm:mb-[17px] sm:text-[40px] text-[20px] mb-[15px]">
+                Экстерьерные ламинационные плёнки Hyundai</h1>
+            <div class="">
+                <div class="grid sm:grid-cols-3 grid-cols-2 gap-3 sm:mb-[30px] mb-2">
+                    <div class="">
+                        <img src="./image/catalog/Rectangle.png"
+                            class="flex sm:mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px] mb-[6px]" alt="">
+                        <h2 class="font-normal text-xs mb-2 sm:text-[26px] text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                    <div class="">
+                        <img src="./image/catalog/Rectangle 2.png"
+                            class="flex sm:mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px] mb-[6px]" alt="">
+                        <h2 class="font-normal text-xs mb-2 sm:text-[26px] text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                    <div class="">
+                        <img src="./image/catalog/Rectangle 3.png"
+                            class="flex sm:mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px] mb-[6px]" alt="">
+                        <h2 class="font-normal text-xs mb-2 sm:text-[26px] text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                    <div class="block sm:hidden">
+                        <img src="./image/catalog/Rectangle 3.png"
+                            class="flex sm:mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px] mb-[6px]" alt="">
+                        <h2 class="font-normal text-xs mb-2 sm:text-[26px] text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-3 grid-cols-2 gap-3 mb-[30px]">
+                    <div class="">
+                        <img src="./image/catalog/Rectangle 3.png"
+                            class="flex mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px]" alt="">
+                        <h2 class="font-normal sm:text-[26px] text-xs text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                    <div class="">
+                        <img src="./image/catalog/Rectangle 4.png"
+                            class="flex mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px]" alt="">
+                        <h2 class="font-normal sm:text-[26px] text-xs text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                    <div class="">
+                        <img src="./image/catalog/Rectangle 5.png"
+                            class="flex mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px]" alt="">
+                        <h2 class="font-normal sm:text-[26px] text-xs text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                    <div class="block sm:hidden">
+                        <img src="./image/catalog/Rectangle 3.png"
+                            class="flex sm:mb-[15px] sm:w-[400px] sm:h-[300px] w-[175px] h-[131px] mb-[6px]" alt="">
+                        <h2 class="font-normal text-xs mb-2 sm:text-[26px] text-black">Антрацит (браш) AG37H </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:w-[1240px] w-[360px] mx-auto">
+                <p class="sm:text-2xl text-xs font-normal text-black mb-[10px] sm:mb-[40px]">
+                    В 2018 году на российском рынке экстерьерных пленок появился новый игрок под известным корейским
+                    брендом Hyundai. С тех пор высокое качество пленок Hyundai оценили многие ламинационные компании как
+                    в России, так и в странах бывшего СНГ.
+                    <br><br>
+                    Пожалуй, одним из главных преимуществ пленок Hyundai являются высококачественные материалы, из
+                    которых они изготавливаются. Верхний слой пленки Hyundai – это прозрачная ПММА пленка
+                    (полиметилметакрилат) толщиной 70 мкм. Именно этот слой защищает пленку от выцветания. Далее идет
+                    слой печатной краски. После этого – тонированная базовая ПВХ пленка c инфракрасным отражающим
+                    пигментом и добавкой, защищающей от чрезмерного накопления тепла в профиле. Четвертый слой – это
+                    праймер, который усиливает адгезию при нанесении пленки на профиль.
+                    <br><br>
+                    Акриловый слой пленки Hyundai увеличен до 70 мкм, в то время как у большинства экстерьерных пленок
+                    он составляет 50 мкм, а иногда и меньше этого минимально допустимого уровня. Более толстый слой
+                    акрила позволяет надежнее защитить пленку от ударов, царапин, суровых погодных условий, выцветания.
+                    Кроме того, акриловый слой 70 мкм прослужит дольше, чем слой 50 мкм. Профессионалам оконного рынка
+                    хорошо известно, что, к сожалению, с каждым годом снижается качество ПВХ профиля. Многие
+                    производители экономят как на материалах, так и на толщине наружной стенки профиля. Результатом
+                    такой экономии становится то, что профиль в готовом изделии начинает выгибать «винтом» даже в
+                    регионах с холодным климатом. Что уж говорить о тех регионах, где температура летом достигает +30° С
+                    и выше, где очень активное солнце. В такой ситуации крайне важно выбирать для ламинации качественную
+                    экстерьерную пленку с надежной защитой от нагрева. Специалисты компании Hyundai разработали и
+                    успешно применяют во всех экстерьерных пленках HRT (Heat Reflection Technology) – технологию
+                    теплоотражения или, иначе говоря, защиту от нагревания. Данная технология предотвращает перегрев ПВХ
+                    профиля под пленкой Hyundai при воздействии солнечных лучей (инфракрасного излучения).
+                    Использование пленки Hyundai понижает риск возможной деформации профиля при высоких температурах
+                    окружающей среды. Пленки Hyundai имеют сертификат RAL – это своего рода знак качества на рынке
+                    ламинационных пленок. Это значит, что пленки Hyundai прошли все испытания SKZ и могут успешно
+                    продаваться по всему миру, в том числе и в Европе, где, как известно, самые строгие требования к
+                    теплотехническим характеристикам светопрозрачных конструкций. Наличие сертификата RAL можно
+                    проверить на независимом сайте www.gkfp.de. Из российских сертификатов имеется обязательный пожарный
+                    сертификат и сертификат ГОСТ. Пленка Hyundai популярна не только в Корее. В Турции, где активное
+                    солнце и много приморских территорий, ежегодно перерабатывается свыше 4 млн кв. м пленки Hyundai, а
+                    в России за 2019 год продано более 1 млн кв. метров. Очевидно, что до объемов переработки в Турции
+                    России еще далеко, но не будем забывать, что пленка Hyundai здесь всего 2 года, а рынок, как
+                    известно, очень конкурентный. С каждым годом пленка Hyundai пользуется все большей популярностью,
+                    она очень востребована. В настоящее время в России пленку Hyundai перерабатывают уже более 100
+                    компаний.
+                    <br><br>
+                    Сегодня на складе в Москве имеется 26 наиболее популярных декоров Hyundai: золотой дуб, темный дуб,
+                    золотой орех, антрацитово серый, шоколадно коричневый и т. д. Бухты есть как стандартной ширины 660
+                    мм, так и шириной 1320 мм. Пленки режутся по необходимым размерам и доставляются до терминала любой
+                    транспортной компании в Москве. Палитра представленных в России декоров регулярно расширяется в
+                    соответствии с потребностями наших клиентов (ближе к лету появится ещё 4 цвета).
+                    <br><br>
+                    За пленками Hyundai вся мощь и весь опыт огромного корейского конгломерата Hyundai Group, который
+                    смог предоставить российским переработчикам продукт с улучшенными техническими характеристиками, с
+                    бОльшим запасом долговечности, при этом по сверхпривлекательной цене. Hyundai – один из самых
+                    знаменитых и успешных в России брендов, продавать который легко!
+                </p>
+                <div class="w-[338px] sm:w-full mx-auto">
+                    <a href="#" class="font-normal sm:text-2xl text-black underline text-xs">Скачать гарантийное письмо
+                        Hyundai для экстерьерных плёнок</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------------------- CATALOG STOP --------------------------------------------------------------- -->
+
+    <!-- --------------------------------------------------------------- FOOTER --------------------------------------------------------------- -->
+    <footer class="bg-[#BB2649]">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] sm:pt-20 pt-[30px] pb-6 sm:pb-[60px]">
+            <div class="sm:flex block sm:justify-between sm:ml-4  justify-center sm:mb-[60px] mb-10">
+                <ul class=" text-center">
+                    <div class="sm:flex sm:items-center gap-[15px] sm:mb-[5px] mb-[10px] text-center sm:text-left">
+                        <img src="./image/footer/phone.svg"
+                            class="flex mx-auto sm:mx-0 mb-2 w-6 h-6 sm:w-[34px] sm:h-[34px]" alt="">
+                        <li class=""><a href="#"
+                                class="sm:underline font-normal sm:text-2xl  text-sm text-white mx-auto sm:mx-0">8 (800)
+                                55-11-607</a></li>
+                    </div>
+                    <li class="sm:flex gap-1 sm:items-center text-center sm:text-left sm:pl-[50px]  mb-[5px]"><a
+                            href="#" class="sm:text-2xl text-sm font-normal text-white">WhatsApp:</a><a href="#"
+                            class="sm:text-2xl text-sm font-normal text-white sm:underline">+79833887010</a> </li>
+                    <li class="sm:flex gap-1 sm:items-center text-center sm:text-left sm:pl-[50px] sm:mb-5 mb-[18px]"><a
+                            href="#" class="sm:text-2xl text-sm font-normal text-white">E-mail:</a><a href="#"
+                            class="sm:text-2xl text-sm font-normal text-white sm:underline">info@decors-pro.ru</a> </li>
+                    <div class="sm:flex sm:items-center text-center sm:text-left gap-[15px] sm:mb-[5px] mb-[45px]">
+                        <img src="./image/footer/location.svg"
+                            class="flex mx-auto sm:mx-0 w-6 h-6 sm:w-[34px] sm:h-[34px] mb-4 " alt="">
+                        <li class=""><a href="#" class=" font-normal sm:text-2xl text-sm  text-white">г. Солнечногорск,
+                                ул.
+                                Красная, 161</a></li>
+                    </div>
+                </ul>
+                <div class="sm:flex block text-center sm:text-left gap-[10px]">
+                    <ul class="sm:w-[300px]">
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-white text-base mb-[5px]">Продукция</a></li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-white text-base mb-[5px]">Услуги</a></li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-white text-base mb-[5px]">Преимущества</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Акции</a></li>
+                    </ul>
+                    <ul class="sm:w-[300px]">
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Отзывы</a></li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Сертификаты</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="#"
+                                class="font-normal sm:text-2xl text-base text-white mb-[5px]">Новости и
+                                статьи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:flex  text-center block sm:mx-0 mx-auto">
+                <a href="#"
+                    class="flex items-center justify-center text-center sm:ml-auto ml-auto mr-auto sm:mr-auto text-white font-normal sm:text-2xl">
+                    <img src="./image/footer/©.svg" class="flex" alt="">
+                    2024 Экстерьерные пленки DECORS
+                </a>
+                <a href="" class="text-center text-white font-normal sm:ml-auto mr-auto ml-auto sm:mr-auto sm:text-2xl">
+                    Самоклеящиеся листы для ламинации сэндвича
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- --------------------------------------------------------------- FOOTER STOP --------------------------------------------------------------- -->
+
+    <!-- --------------------------------------------------------------- JS APP --------------------------------------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
