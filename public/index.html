@@ -15,7 +15,7 @@
 
 <body>
     <!-- --------------------------------------------------------------- HEADER --------------------------------------------------------------- -->
-    <header class="pt-5">
+    <header class="pt-5 mb-[10px] sm:mb-0">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
             <div class="flex items-center justify-between mb-5">
                 <div class="flex items-center sm:gap-[56px] justify-between sm:justify-normal w-[630px]">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gap-5 justify-between items-center flex sm:hidden mb-[10px] ">
+            <div class="gap-5 justify-between items-center flex sm:hidden ">
                 <a href="#"
                     class="font-bold text-base text-[#000000] pt-[14px] pb-[17px] pl-[25px] pr-[25px] border-[#E1E0E0] rounded-[10px] border-[1px]">
                     8 (800) 55-11-607
@@ -55,10 +55,12 @@
             <div class="bg-[#BB2649]">
                 <div id="responsive-menu" style="transition: .7s all;"
                     class="w-full pt-[30px] pl-[50px] pb-[116px] pr-[30px] top-0 -right-full fixed bg-[#BB2649]">
-                    <button class="ml-[250px]">
-                        <img id="close__menu" src="./image/header/close.svg" class="flex" alt="">
-                    </button>
-                    <ul class="mb-[22px]">
+                    <div class="relative">
+                        <button class="absolute right-0">
+                            <img id="close__menu" src="./image/header/close.svg" class="flex" alt="">
+                        </button>
+                    </div>
+                    <ul class="mb-[22px] mt-[18px]">
                         <li class="flex items-center mb-[10px]"><a href="./products.html"
                                 class=" text-white flex items-center">ПРОДУКЦИЯ</a></li>
                         <div class="w[326px] bg-[#D42E5B] h-[1px] mb-[10px]"></div>
@@ -102,11 +104,30 @@
                         <img src="./image/header/house.svg" class="flex" alt="">
                         <div class="w-[1px] h-[45px] bg-white"></div>
                     </div>
-                    <li class=""><a href="./products.html"
+                    <li class="group" id="btn"><a href="#" onclick="button()"
                             class="sm:font-normal sm:text-lg text-white flex items-center cursor-pointer">
                             ПРОДУКЦИЯ <img src="./image/header/button.svg" class="flex" alt="">
                         </a>
-
+                        <div class="bg-[#D42E5B] group-hover:block bottom-[10px] -ml-5 absolute hidden " id="btn1">
+                            <div class="py-[20px] pl-3 pr-4 w-[257px]">
+                                <ul>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">КЛЕЕВЫЕ
+                                            МАТЕРИАЛЫ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">РЕТУШИРУЮЩИЕ
+                                            МАРКЕРЫ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">ЗАЩИТНЫЕ
+                                            ПЛЁНКИ</a></li>
+                                    <li class="mb-10"><a href=""
+                                            class="font-semibold text-base text-white">САМОКЛЕЯЩИЙСЯ ЛИСТ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">ОБОРУДОВАНИЕ
+                                            ДЛЯ ЛАМИНАЦИИ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">РАСХОДНЫЕ
+                                            МАТЕРИАЛЫ</a></li>
+                                    <li class=""><a href="" class="font-semibold text-base text-white">САМОКЛЕЯЩАЯСЯ
+                                            ЭКСТЕРЬЕРНАЯ ПЛЁНКА</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class=""><a href="./services.html" class="sm:font-normal sm:text-lg text-white">УСЛУГИ</a></li>
                     <li class=""><a href="./advantages.html"
@@ -118,8 +139,15 @@
                     </li>
                     <li class=""><a href="./articles.html" class="sm:font-normal sm:text-lg text-white">НОВОСТИ И
                             СТАТЬИ</a></li>
-                    <li class="flex gap-[10px]"><a href="./contacts.html" class="sm:font-normal sm:text-lg text-white">КОНТАКТЫ</a>
-                        <img src="./image/header/button.svg" alt="">
+                    <li class="group" id="dropdownbutton"><a href="#" onclick="toggleFropdown()"
+                            class="sm:font-normal sm:text-lg text-white flex items-center cursor-pointer">
+                            КОНТАКТЫ <img src="./image/header/button.svg" class="flex" alt="">
+                        </a>
+                        <div class="bg-[#D42E5B] bottom-[440px] group-hover:block -ml-5 absolute hidden " id="dropdown">
+                            <div class="py-[20px] pl-3 pr-4">
+                                <a href="#" class="font-semibold text-base text-white text-center">О КОМПАНИИ ></a>
+                            </div>
+                        </div>
                     </li>
                     <div class="flex items-center gap-5">
                         <div class="w-[1px] h-[45px] bg-white"></div>
@@ -140,15 +168,15 @@
             <h1
                 class="font-bold sm:text-[56px] md:text-3xl text-lg sm:text-left md:text-left text-center sm:mb-[243px] md:mb-[100px] mb-0 text-white">
                 Экстерьерные пленки DECORS</h1>
-            <a href="#" class="md:flex sm:flex hidden">
-                <img src="./image/hero/button.svg" class="flex" alt="">
-            </a>
+            <button class="md:flex sm:flex hidden" id="herobtn">
+                <img src="./image/hero/button.svg" class="flex hover:bg-red-600 hover:rounded-full" alt="">
+            </button>
         </div>
     </section>
     <!-- --------------------------------------------------------------- HERO STOP --------------------------------------------------------------- -->
 
     <!-- --------------------------------------------------------------- DECORATIONS --------------------------------------------------------------- -->
-    <section class="sm:mb-0 mb-[30px]">
+    <section class="sm:mb-0 mb-[30px]" id="herobutton">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] sm:flex md:flex block sm:gap-[58px]">
             <div class="text-center  mx-auto md:mx-0 sm:mx-0 w-[360px] sm:w-[494px] md:w-[639px] mb-[30px] ">
                 <img src="./image/decorations/banner.png"
@@ -197,32 +225,32 @@
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
             <h2 class="font-bold text-[40px] text-white text-center pt-10 mb-[47px]">Преимущества DECORS</h2>
             <div class="pb-[93px] sm:flex gap-5">
-                <div class="w-[295px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                <div class="sm:w-[295px] w-[100px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
                 box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;">
                     <div class="ml-auto mr-auto justify-center text-center items-center pt-[25px] pb-[25px] ">
                         <img src="./image/advantages/check.svg" class="flex mb-[15px] ml-auto mr-auto" alt="">
-                        <p class="font-normal text-[26px] text-white">Сертификат RAL</p>
+                        <p class="font-normal text-[26px] sm:text-lg text-white">Сертификат RAL</p>
                     </div>
                 </div>
-                <div class="w-[295px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                <div class="sm:w-[295px] w-[100px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
                 box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;">
                     <div class="ml-auto mr-auto justify-center text-center items-center pt-[25px] pb-[25px] ">
                         <img src="./image/advantages/check.svg" class="flex mb-[15px] ml-auto mr-auto" alt="">
-                        <p class="font-normal text-[26px] text-white">Защита от нагрева</p>
+                        <p class="font-normal sm:text-[26px] text-lg text-white">Защита от нагрева</p>
                     </div>
                 </div>
-                <div class="w-[295px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                <div class="sm:w-[295px] w-[100px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
                 box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;">
                     <div class="ml-auto mr-auto justify-center text-center items-center pt-[25px] pb-[25px] ">
                         <img src="./image/advantages/check.svg" class="flex mb-[15px] ml-auto mr-auto" alt="">
-                        <p class="font-normal text-[26px] text-white">Праймер</p>
+                        <p class="font-normal sm:text-[26px] text-lg text-white">Праймер</p>
                     </div>
                 </div>
-                <div class="w-[295px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
+                <div class="sm:w-[295px] w-[100px] border-none rounded-[10px]" style="box-shadow: 0px 2px 2px 0px #FFFFFF40 inset; box-shadow: 0px -2px 3.9px 0px #A6A6A640 inset;
                 box-shadow: 0px 0px 50px 0px #FFFFFF26 inset;">
                     <div class="ml-auto mr-auto justify-center text-center items-center pt-[25px] pb-[25px] ">
                         <img src="./image/advantages/check.svg" class="flex mb-[15px] ml-auto mr-auto" alt="">
-                        <p class="font-normal text-[26px] text-white">Известный бренд</p>
+                        <p class="font-normal sm:text-[26px] text-lg text-white">Известный бренд</p>
                     </div>
                 </div>
             </div>
@@ -412,8 +440,8 @@
                 class="sm:flex hidden justify-center">
                 <div class="pt-[50px] sm:pb-[60px] items-center">
                     <h2 class="sm:font-bold sm:text-[28px] sm:mb-[30px] text-white">Сделайте первый шаг</h2>
-                    <button
-                        class="sm:font-bold sm:text-[20px] text-[#D42E5B] sm:pt-[18px] sm:pb-[18px] sm:pl-[35px] sm:pr-[35px] border-none rounded-[10px] bg-white ">Бесплатная
+                    <button class="rounded-[10px] sm:font-bold sm:text-[20px] text-[#D42E5B] bg-white hover:bg-[#D42E5B] hover:border-[#9F2436] border-[3px] hover:text-white sm:pt-[18px] sm:pb-[18px] sm:pl-[35px] sm:pr-[35px] 
+                        ">Бесплатная
                         консультация</button>
                 </div>
             </div>
@@ -423,7 +451,7 @@
                     <h2 class="font-semibold sm:text-[28px] mb-[24px] text-[20px] text-white">Сделайте первый шаг
                     </h2>
                     <button
-                        class="sm:font-bold sm:text-[20px] text-[#D42E5B] pt-[11px] pb-[11px] pl-[19px] mb-[30px] pr-[19px] border-[#D42E5B] border-[3px] rounded-[10px] bg-white ">Бесплатная
+                        class="sm:font-bold sm:text-[20px] pt-[11px] pb-[11px] pl-[19px] mb-[30px] pr-[19px] text-[#D42E5B] bg-white rounded-[10px] hover:bg-[#D42E5B] hover:border-[#9F2436] border-[3px] hover:text-white ">Бесплатная
                         консультация</button>
                 </div>
             </div>
@@ -438,9 +466,9 @@
                 class="text-[#27272A] sm:font-bold font-semibold text-[20px] sm:text-[40px] text-center sm:mb-[47px] mb-5">
                 Отзывы клиентов</h2>
             <div class="sm:mb-[50px] sm:block hidden">
-                <div class="swiper mySwiper flex items-center relative">
+                <div class="swiper mySwiper flex items-center">
                     <button
-                        class="swiper-button-prev1 bg-[#D42E5B] w-20 h-20z-10 rounded-full border-none absolute  text-white left-0">
+                        class="swiper-button-prev1 bg-[#D42E5B] w-20 h-20 z-10 rounded-full border-none   text-white left-20">
                         <img src="./image/customer/left.svg" class="flex items-center mx-auto" alt="">
                     </button>
 
@@ -606,16 +634,16 @@
                 <div class="flex pt-20 pb-20 pl-[100px] pr-[100p] gap-[261px]">
                     <h2 class="font-bold text-[40px] text-white">Нужна помощь менеджера?</h2>
                     <button
-                        class="font-bold text-[20px] text-[#D42E5B] pt-[18px] pb-[18px] pl-[35px] pr-[35px] border-none rounded-[10px] bg-white">Обсудить
+                        class="font-bold text-[20px] text-[#D42E5B] pt-[18px] pb-[18px] pl-[35px] pr-[35px] border-none rounded-[10px] bg-white hover:bg-[#9F2436] hover:text-white hover:border-white hover:border-[1px] hover:border-solid">Обсудить
                         заказ</button>
                 </div>
             </div>
             <div style="background-image: url(./image/customer/banner.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
                 class="border-none rounded-[10px]  block sm:hidden mb-[30px] ">
-                <div class="pt-[36px] pb-[41px] block mx-auto justify-center">
+                <div class="pt-[36px] pb-[41px] block mx-auto justify-center text-center items-center">
                     <h2 class="font-bold text-base mb-[22px] text-white text-center">Нужна помощь менеджера?</h2>
                     <button
-                        class="font-bold text-[12px] text-[#D42E5B] pt-[10px] text-center ml-28 justify-center pb-[10px] pl-[20px] pr-[20px] border-none rounded-[10px] bg-white">Обсудить
+                        class="font-bold text-[12px] text-[#D42E5B] pt-[10px] text-centen  justify-center pb-[10px] pl-[20px] pr-[20px] border-none rounded-[10px] bg-white hover:bg-[#9F2436] hover:text-white hover:border-white hover:border-[1px] hover:border-solid">Обсудить
                         заказ</button>
                 </div>
             </div>
@@ -665,14 +693,14 @@
             </div>
         </div>
     </section>
-    <!-- --------------------------------------------------------------- NEW STOP --------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------- NEW STOP --------------------------------------------------------------- -->
 
     <!-- --------------------------------------------------------------- FOOTER --------------------------------------------------------------- -->
     <footer class="bg-[#BB2649]">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] sm:pt-20 pt-[30px] pb-6 sm:pb-[60px]">
             <div class="sm:flex block sm:justify-between sm:ml-4  justify-center sm:mb-[60px] mb-10">
                 <ul class=" text-center">
-                    <div class="sm:flex sm:items-center gap-[15px] sm:mb-[5px] mb-[10px] text-center sm:text-left">
+                    <div class="sm:flex sm:items-center gap-[15px] sm:mb-[5px] items-center mb-[10px] text-center sm:text-left">
                         <img src="./image/footer/phone.svg"
                             class="flex mx-auto sm:mx-0 mb-2 w-6 h-6 sm:w-[34px] sm:h-[34px]" alt="">
                         <li class=""><a href="#"
@@ -687,7 +715,7 @@
                             class="sm:text-2xl text-sm font-normal text-white sm:underline">info@decors-pro.ru</a> </li>
                     <div class="sm:flex sm:items-center text-center sm:text-left gap-[15px] sm:mb-[5px] mb-[45px]">
                         <img src="./image/footer/location.svg"
-                            class="flex mx-auto sm:mx-0 w-6 h-6 sm:w-[34px] sm:h-[34px] mb-4 " alt="">
+                            class="flex mx-auto sm:mx-0 w-6 h-6 sm:w-[40px] sm:h-[40px] mb-4 " alt="">
                         <li class=""><a href="#" class=" font-normal sm:text-2xl text-sm  text-white">г. Солнечногорск,
                                 ул.
                                 Красная, 161</a></li>
@@ -734,6 +762,7 @@
     <!-- --------------------------------------------------------------- JS APP --------------------------------------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>

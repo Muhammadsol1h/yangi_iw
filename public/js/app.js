@@ -24,15 +24,25 @@ var swiper = new Swiper(".mySwiper", {
 let resposive = document.querySelector("#responsive-menu");
 let hamburger_menu = document.querySelector("#hamburger-menu");
 let close_menu = document.querySelector("#close__menu");
+let body = document.querySelector('body')
 
 hamburger_menu.addEventListener("click", function () {
+  body.classList.add('overflow-hidden')
   resposive.classList.add("right-0");
   resposive.classList.remove("-right-full");
 });
 close_menu.addEventListener("click", function () {
   resposive.classList.add("-right-full");
   resposive.classList.remove("right-0");
+  body.classList.remove('overflow-hidden')
+
 });
+// ================================================ HERO ================================================
+let herobtn = document.querySelector('#herobtn')
+let herobtn2 = document.querySelector('#herobutton')
+herobtn.addEventListener('click' , function(){
+  herobtn2.classList.add('')
+})
 // ================================================ ARTICLES ================================================
 let active = document.querySelectorAll("#active1");
 let activebtn1 = document.querySelector("#activebtn1");

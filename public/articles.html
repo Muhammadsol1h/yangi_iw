@@ -16,11 +16,11 @@
 
 <body>
     <!-- --------------------------------------------------------------- HEADER --------------------------------------------------------------- -->
-    <header class="pt-5 sm:mb-[60px] mb-[30px]">
+    <header class="pt-5">
         <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px]">
             <div class="flex items-center justify-between mb-5">
                 <div class="flex items-center sm:gap-[56px] justify-between sm:justify-normal w-[630px]">
-                    <a href="./index.html" class="flex">
+                    <a href="#" class="flex">
                         <img src="./image/header/logo.svg" alt=""
                             class="flex sm:w-[274px] sm:h-[79] w-[200px] h-[58px]">
                     </a>
@@ -103,11 +103,30 @@
                         <img src="./image/header/house.svg" class="flex" alt="">
                         <div class="w-[1px] h-[45px] bg-white"></div>
                     </div>
-                    <li class=""><a href="./products.html"
+                    <li class="group" id="btn"><a href="#" onclick="button()"
                             class="sm:font-normal sm:text-lg text-white flex items-center cursor-pointer">
                             ПРОДУКЦИЯ <img src="./image/header/button.svg" class="flex" alt="">
                         </a>
-
+                        <div class="bg-[#D42E5B] group-hover:block bottom-[10px] -ml-5 absolute hidden " id="btn1">
+                            <div class="py-[20px] pl-3 pr-4 w-[257px]">
+                                <ul>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">КЛЕЕВЫЕ
+                                            МАТЕРИАЛЫ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">РЕТУШИРУЮЩИЕ
+                                            МАРКЕРЫ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">ЗАЩИТНЫЕ
+                                            ПЛЁНКИ</a></li>
+                                    <li class="mb-10"><a href=""
+                                            class="font-semibold text-base text-white">САМОКЛЕЯЩИЙСЯ ЛИСТ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">ОБОРУДОВАНИЕ
+                                            ДЛЯ ЛАМИНАЦИИ</a></li>
+                                    <li class="mb-10"><a href="" class="font-semibold text-base text-white">РАСХОДНЫЕ
+                                            МАТЕРИАЛЫ</a></li>
+                                    <li class=""><a href="" class="font-semibold text-base text-white">САМОКЛЕЯЩАЯСЯ
+                                            ЭКСТЕРЬЕРНАЯ ПЛЁНКА</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class=""><a href="./services.html" class="sm:font-normal sm:text-lg text-white">УСЛУГИ</a></li>
                     <li class=""><a href="./advantages.html"
@@ -119,8 +138,15 @@
                     </li>
                     <li class=""><a href="./articles.html" class="sm:font-normal sm:text-lg text-white">НОВОСТИ И
                             СТАТЬИ</a></li>
-                    <li class="flex gap-[10px]"><a href="./contacts.html" class="sm:font-normal sm:text-lg text-white">КОНТАКТЫ</a>
-                        <img src="./image/header/button.svg" alt="">
+                    <li class="group" id="dropdownbutton"><a href="#" onclick="toggleFropdown()"
+                            class="sm:font-normal sm:text-lg text-white flex items-center cursor-pointer">
+                            КОНТАКТЫ <img src="./image/header/button.svg" class="flex" alt="">
+                        </a>
+                        <div class="bg-[#D42E5B] bottom-[440px] group-hover:block -ml-5 absolute hidden " id="dropdown">
+                            <div class="py-[20px] pl-3 pr-4">
+                                <a href="#" class="font-semibold text-base text-white text-center">О КОМПАНИИ ></a>
+                            </div>
+                        </div>
                     </li>
                     <div class="flex items-center gap-5">
                         <div class="w-[1px] h-[45px] bg-white"></div>
