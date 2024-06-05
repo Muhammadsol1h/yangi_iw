@@ -38,29 +38,9 @@ close_menu.addEventListener("click", function () {
 
 });
 // ================================================ HERO ================================================
-let herobtn = document.querySelector('#herobtn')
-let herobtn2 = document.querySelector('#herobutton')
-herobtn.addEventListener('click' , function(){
-  herobtn2.classList.add('')
-})
+
+// ================================================ ADVANTAGES ================================================
 // ================================================ ARTICLES ================================================
-let active = document.querySelectorAll("#active1");
-let activebtn1 = document.querySelector("#activebtn1");
-let activebtn2 = document.querySelector("#activebtn2");
-let activebtn3 = document.querySelector("#activebtn3");
-let enterbtn = document.querySelector("#enterbtn");
-let enterbtn1 = document.querySelector("#enterbtn");
-let enterbtn2 = document.querySelector("#enterbtn");
-active.forEach(function (item, index) {
-  item.addEventListener("click", function () {
-    active.forEach(function (item, index) {
-      active[index].classList.remove("active1");
-    });
-    active[index].classList.add("active1");
-  });
-});
-enterbtn.addEventListener('click' , function(){
-  activebtn1.classList.toggle('hidden')
-})
+
 
 // ================================================ CONTACTK ================================================
