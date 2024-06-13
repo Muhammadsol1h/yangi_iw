@@ -1,6 +1,8 @@
 // ================================================ SWIPER ================================================
 var swiper = new Swiper(".mySwiper", {
   cssMode: true,
+    slidesPerView: 2,
+    spaceBetween: 22,
   navigation: {
     nextEl: ".swiper-button-next1",
     prevEl: ".swiper-button-prev1",
@@ -8,18 +10,14 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
-  mousewheel: true,
-  keyboard: true,
+ 
 });
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: "auto",
-  centeredSlides: true,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// var swiper = new Swiper(".mySwiper", {
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
 // ================================================ HEADER ================================================
 let resposive = document.querySelector("#responsive-menu");
 let hamburger_menu = document.querySelector("#hamburger-menu");
