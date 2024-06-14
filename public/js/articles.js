@@ -1,10 +1,15 @@
-const tabs = document.querySelectorAll('#tab_btn')
-const all_content = document.querySelectorAll('#content')
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        tabs.forEach(tab => { tab.classList.remove('btnactive') });
-        tab.classList.add('btnactive');
-        all_content.forEach(content => { content.classList.remove('hidden') })
-        all_content[index].classList.add('activeblock')
+const tabs = document.querySelectorAll('#tabs')
+const all_contents = document.querySelectorAll('#contents')
+
+tabs.forEach((item, index) => {
+    item.addEventListener('click', function () {
+        tabs.forEach(function (item, index) {
+            item.classList.remove('!bg-[#D42E5B]')
+            item.classList.remove('!text-[#FFFFFF]')
+            all_contents[index].classList.add("hidden")
+        })
+        item.classList.add('!bg-[#D42E5B]')
+        item.classList.add('!text-[#FFFFFF]')
+        all_contents[index].classList.remove("hidden")
     })
 })

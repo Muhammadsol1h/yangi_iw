@@ -18,6 +18,13 @@ var swiper = new Swiper(".mySwiper", {
 //     clickable: true,
 //   },
 // });
+var swiper5 = new Swiper(".mySwiper5", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 // ================================================ HEADER ================================================
 let resposive = document.querySelector("#responsive-menu");
 let hamburger_menu = document.querySelector("#hamburger-menu");
@@ -39,6 +46,5 @@ close_menu.addEventListener("click", function () {
 
 // ================================================ ADVANTAGES ================================================
 // ================================================ ARTICLES ================================================
-
 
 // ================================================ CONTACTK ================================================
