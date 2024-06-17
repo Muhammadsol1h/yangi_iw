@@ -1488,6 +1488,14 @@ video {
     margin-right: auto;
   }
 
+  .sm\:mb-\[0\] {
+    margin-bottom: 0;
+  }
+
+  .sm\:mb-\[\] {
+    margin-bottom: ;
+  }
+
   .sm\:block {
     display: block;
   }
